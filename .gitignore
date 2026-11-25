@@ -1,0 +1,6 @@
+# Transient local execution artefacts. Retained evidence is not ignored.
+__pycache__/
+*.py[cod]
+/.venv/
+/.local-checks/
+/.DS_Store
