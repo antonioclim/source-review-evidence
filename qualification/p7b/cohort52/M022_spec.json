@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 241,
+  "col": 7,
+  "end_line": 241,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Gt",
+  "after": "GtE",
+  "source": "len(callable_records) > 4096",
+  "pool_id": "codeprobe_interpretation.py:0075",
+  "id": "M022"
+}

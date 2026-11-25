@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_s01_observation_adapter.py",
+  "line": 78,
+  "col": 31,
+  "end_line": 78,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "\"; \".join(str(x) for x in record.get(\"limitations\", [])) or \"Bounded by the S02 measurement specification.\"",
+  "pool_id": "codeprobe_s01_observation_adapter.py:0002",
+  "id": "M051"
+}

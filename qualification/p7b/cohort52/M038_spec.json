@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 273,
+  "col": 11,
+  "end_line": 273,
+  "kind": "boolean",
+  "index": 0,
+  "before": "And",
+  "after": "Or",
+  "source": "isinstance(value, str) and _normalise_identifier(value) in PROVENANCE_LABEL_VALUES",
+  "pool_id": "codeprobe_review_contract.py:0010",
+  "id": "M038"
+}

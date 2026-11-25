@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 428,
+  "col": 15,
+  "end_line": 428,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "(minimum is not None and value < minimum) or (maximum is not None and value > maximum)",
+  "pool_id": "codeprobe_measurement_kernel.py:0070",
+  "id": "M005"
+}

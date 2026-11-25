@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 596,
+  "col": 11,
+  "end_line": 596,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotEq",
+  "after": "Eq",
+  "source": "digest != expected",
+  "pool_id": "codeprobe_review_contract.py:0088",
+  "id": "M046"
+}

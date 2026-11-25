@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 154,
+  "col": 7,
+  "end_line": 154,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "type(profile_id) is not str or profile_id not in PROFILE_IDS",
+  "pool_id": "codeprobe_interpretation.py:0025",
+  "id": "M016"
+}

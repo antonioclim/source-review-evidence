@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_numeric_policy.py",
+  "line": 105,
+  "col": 9,
+  "end_line": 105,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Gt",
+  "after": "GtE",
+  "source": "delta_low > tolerance_high",
+  "pool_id": "codeprobe_numeric_policy.py:0013",
+  "id": "M036"
+}

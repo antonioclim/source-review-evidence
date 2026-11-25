@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 445,
+  "col": 7,
+  "end_line": 445,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "not isinstance(record[\"limitations\"], list) or not all(isinstance(item, str) and item.strip() for item in record[\"limitations\"])",
+  "pool_id": "codeprobe_measurement_kernel.py:0088",
+  "id": "M006"
+}

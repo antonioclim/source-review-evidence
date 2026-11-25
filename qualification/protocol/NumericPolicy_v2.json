@@ -1,0 +1,50 @@
+{
+  "schema": "codeprobe-numeric-policy/2",
+  "version": "2.0.0-a2p6-design",
+  "status": "FORMAL_DESIGN_AND_REFERENCE_MODEL_ONLY",
+  "production_file_unchanged": "source/src/codeprobe_numeric_policy.py",
+  "inputs": {
+    "decimal": [
+      "str representing a finite decimal accepted by the existing lexical parser",
+      "int except bool",
+      "finite Decimal"
+    ],
+    "reject": [
+      "bool",
+      "binary float in lexical mode",
+      "nonfinite operands/tolerances",
+      "negative tolerances"
+    ],
+    "binary64": "type exactly float, finite operands; decimal lexical tolerances as above"
+  },
+  "lexical_exactness": "Convert sign, coefficient and exponent to a rational without context arithmetic. Constructors may parse notation; every subsequent comparison uses integer ratios. Canonical serialisation preserves numeric value, not spelling, trailing zero count or signed zero.",
+  "decimal_rule": "abs(a-b) <= max(at,rt*max(abs(a),abs(b))) with exact rational operations",
+  "binary_intervals": {
+    "centres": "exact float.as_integer_ratio()",
+    "radii": "exact math.ulp(x).as_integer_ratio()/2",
+    "sets": "closed conservative intervals [centre-radius,centre+radius], including zero/subnormal/max-finite cases",
+    "tie_policy": "Closed interval over-approximation, not an assertion of exact ties-to-even preimage at binade boundaries.",
+    "delta_bounds": "[max(0,abs(a-b)-ua-ub),abs(a-b)+ua+ub]",
+    "magnitude_bounds": "[max(0,max(abs(a),abs(b))-max(ua,ub)),max(abs(a),abs(b))+max(ua,ub)]",
+    "tolerance_bounds": "max(at,rt*magnitude_bound) at each endpoint",
+    "classification": "within if delta_high<=tol_low; outside if delta_low>tol_high; otherwise indeterminate_boundary",
+    "assurance": "Decisive statuses are sound sufficient conditions. The overlapping-interval result can be conservative even if the exact dependency-aware relation has constant truth value.",
+    "indeterminate_is_pass": false
+  },
+  "resource_policy": {
+    "mathematical_domain": "all finite admitted lexical quantities",
+    "execution": "finite resource budgets may yield RESOURCE_REFUSED, never PASS; refuse before large allocation where necessary",
+    "new_material_input_cap": "requires explicit further author decision; no cap silently installed in P6",
+    "limits_not_yet_qualified": "P7 production memory/time/exception-path qualification pending"
+  },
+  "context_invariance": "For completed evaluations, changing Decimal.prec, rounding or traps cannot change the exact rational status or numeric serialisation. Context configurations are test parameters.",
+  "P7_acceptance": [
+    "P3 decimal false-admission and strict-interior binary witness are rejected appropriately",
+    "M025/M026/M028 contract distinctions exercised by real tests",
+    "default and varied Decimal contexts agree",
+    "invalid input and resource refusal are separately typed",
+    "all existing canonical tests retained, outputs requalified with explicit provenance; no fixed precision patch"
+  ],
+  "proofs": "../formal/Proofs.md#numeric-soundness",
+  "reference_model": "../formal/spec_model.py"
+}

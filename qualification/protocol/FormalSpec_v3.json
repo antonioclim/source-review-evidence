@@ -1,0 +1,119 @@
+{
+  "schema": "codeprobe-formal-specification/3",
+  "version": "3.0.0-a2p6",
+  "status": "LOCAL_PROTOCOL_SUCCESSOR_NOT_INTEGRATED",
+  "source_candidate": "P7-R4-review-candidate / LP02/v3.2 unchanged",
+  "authorised_contracts": [
+    "SC-01",
+    "SC-02",
+    "SC-03",
+    "SC-04"
+  ],
+  "gate_evaluation_states": [
+    "PASS",
+    "FAIL",
+    "NOT_EVALUATED",
+    "INVALID_INPUT"
+  ],
+  "gates": [
+    {
+      "id": "G1",
+      "name": "source admission",
+      "object": "finite bytes, language, logical path and declared resource context",
+      "precondition": "well-formed request",
+      "pass": "intake admits the original bytes under size, UTF-8 and NUL rules and binds raw/normalised identities",
+      "false_or_failure": "typed intake refusal",
+      "scope": "No repaired substitute bytes. G1 does not assert Python syntax validity."
+    },
+    {
+      "id": "G2",
+      "name": "observation availability",
+      "object": "one requested versioned observation slot",
+      "precondition": "G1 PASS and V2-valid observation record",
+      "pass": "state == observed",
+      "false_or_failure": "valid not_applicable, insufficient_evidence or unavailable record: availability predicate false with its typed reason",
+      "scope": "Availability FAIL is not a malformed record or necessarily an analyser defect. Invalid V2 yields INVALID_INPUT, not a counterexample."
+    },
+    {
+      "id": "G3",
+      "name": "value and codomain conformance",
+      "object": "observed atomic value with specification identity",
+      "precondition": "G2 PASS",
+      "pass": "value, unit, bounds and scale satisfy the versioned specification",
+      "false_or_failure": "named conformance violation",
+      "scope": "Structural record validity and coordinate sufficiency are separately reported. No G3 PASS is inferred for a null unavailable value."
+    },
+    {
+      "id": "G4",
+      "name": "local source-evidence adequacy",
+      "object": "normalised source identity, proposed coordinate cover and required visited spans",
+      "precondition": "structurally admitted source reference and a declared observation",
+      "pass": "every required visited span is contained in the admitted cover",
+      "false_or_failure": "uncovered required span or invalid reference",
+      "scope": "The visitor convention fixes which spans are required. Minimality and human comprehensibility are outside this predicate."
+    },
+    {
+      "id": "G5",
+      "name": "policy interpretation",
+      "object": "applicable observation and declared versioned profile",
+      "precondition": "observed applicable value and admitted profile",
+      "pass": "decision equals the declared non-compensatory rule under that profile",
+      "false_or_failure": "wrong decision, profile identity or applicability handling",
+      "scope": "A correct different decision under another profile is a relational example, not G5 FAIL."
+    },
+    {
+      "id": "G6",
+      "name": "consumer admission and source replay",
+      "object": "typed consumer record and source/profile/build context",
+      "precondition": "declared full-route request and explicit cross-carrier/context binding",
+      "pass": "consumer_admission == PASS AND replay == PASS",
+      "false_or_failure": "a completed required subcheck fails; invalid context is INVALID_INPUT; missing subcheck is NOT_EVALUATED",
+      "scope": "Admission-only and replay-only results are not a full G6 PASS. S01 envelope and S04 capsule results remain separately typed; no implicit coercion."
+    }
+  ],
+  "V2": {
+    "states": [
+      "observed",
+      "not_applicable",
+      "insufficient_evidence",
+      "unavailable"
+    ],
+    "invariant": "(state == observed) iff (value is not null); non-observed has a nonempty typed reason",
+    "scope": "Necessary representation invariant only; does not substitute for the full schema validator."
+  },
+  "G6_truth_rule": "AND",
+  "G5_relation": {
+    "domain": "same observed x/specification, two distinct admitted profiles pi and pi_prime",
+    "witness": "D_pi(x) != D_pi_prime(x), with both policy evaluations conformant",
+    "conclusion": "no single profile-independent function of x can give both outcomes",
+    "not_claimed": "policy failure, statistical independence or all-pairs gate independence"
+  },
+  "logical_counterexamples": 4,
+  "relational_cases": 1,
+  "claim_count": 9,
+  "threshold_domain": "x,L,U integers; x>=0 and 0<=L<=U; bool excluded as an integer input",
+  "threshold_image": [
+    "{0} if x<=L",
+    "{0,1} if L<x<=U",
+    "{1} if x>U"
+  ],
+  "radius": {
+    "boundary_distance": "min(abs(x-L),abs(x-U))",
+    "integer_decision_change": [
+      "L+1-x if x<=L",
+      "min(x-L,U+1-x) if L<x<=U",
+      "x-U if x>U"
+    ],
+    "theorem_falsifier": "one admissible tuple violating the image identity; moving x across a boundary does not falsify that identity"
+  },
+  "numeric_design": "NumericPolicy_v2.json",
+  "proofs": "../formal/Proofs.md",
+  "validation_model": "../formal/spec_model.py",
+  "canonical_implementation_qualified": false,
+  "G6_evaluation_precedence": [
+    "wrong or absent context binding: INVALID_INPUT",
+    "any required completed subcheck FAIL: FAIL",
+    "both PASS: PASS",
+    "otherwise NOT_EVALUATED"
+  ]
+}

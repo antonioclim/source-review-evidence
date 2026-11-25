@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 184,
+  "col": 34,
+  "end_line": 184,
+  "kind": "comparison",
+  "index": 1,
+  "before": "LtE",
+  "after": "Lt",
+  "source": "0 <= v <= 10000",
+  "pool_id": "codeprobe_interpretation.py:0050",
+  "id": "M019"
+}

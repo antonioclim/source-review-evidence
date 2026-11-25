@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 1151,
+  "col": 11,
+  "end_line": 1151,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "item[\"normalised_sha256\"] != artifact[\"normalised_sha256\"] or item[\"path\"] != artifact[\"path\"]",
+  "pool_id": "codeprobe_measurement_kernel.py:0158",
+  "id": "M010"
+}

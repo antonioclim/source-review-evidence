@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 940,
+  "col": 25,
+  "end_line": 940,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Eq",
+  "after": "NotEq",
+  "source": "set(close.group(1)) == {fence_character}",
+  "pool_id": "codeprobe_measurement_kernel.py:0123",
+  "id": "M008"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 89,
+  "col": 105,
+  "end_line": 89,
+  "kind": "comparison",
+  "index": 0,
+  "before": "In",
+  "after": "NotIn",
+  "source": "ROOT in parent.parents",
+  "pool_id": "codeprobe_interpretation.py:0017",
+  "id": "M015"
+}

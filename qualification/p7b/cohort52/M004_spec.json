@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 406,
+  "col": 11,
+  "end_line": 406,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "applicability[\"reason_code\"] or applicability[\"reason\"]",
+  "pool_id": "codeprobe_measurement_kernel.py:0053",
+  "id": "M004"
+}

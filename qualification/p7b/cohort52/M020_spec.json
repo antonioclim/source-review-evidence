@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 196,
+  "col": 43,
+  "end_line": 196,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Eq",
+  "after": "NotEq",
+  "source": "possible == [False]",
+  "pool_id": "codeprobe_interpretation.py:0059",
+  "id": "M020"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_numeric_policy.py",
+  "line": 82,
+  "col": 7,
+  "end_line": 82,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "not math.isfinite(left) or not math.isfinite(right)",
+  "pool_id": "codeprobe_numeric_policy.py:0008",
+  "id": "M032"
+}

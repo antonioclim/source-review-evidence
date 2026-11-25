@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 163,
+  "col": 11,
+  "end_line": 163,
+  "kind": "boolean",
+  "index": 0,
+  "before": "And",
+  "after": "Or",
+  "source": "isinstance(node, float) and not math.isfinite(node)",
+  "pool_id": "codeprobe_review_contract.py:0000",
+  "id": "M037"
+}

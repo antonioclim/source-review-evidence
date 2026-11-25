@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 259,
+  "col": 25,
+  "end_line": 259,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Lt",
+  "after": "LtE",
+  "source": "end_line < start_line",
+  "pool_id": "codeprobe_measurement_kernel.py:0018",
+  "id": "M002"
+}

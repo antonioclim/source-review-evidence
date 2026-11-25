@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-20T21:32:38.623010+00:00",
+  "test_sha256": "5cd61769284f46eb3d33b6045a6959f9302256879761fb3f46ff3d6341704188",
+  "mapped52_sha256": "de65a3752e6ad9a22a3e12b25a8529c0be902efc9e055d1987db86fd16913285",
+  "gate12_sha256": "d361df7045cf8b90131375dea9d46730299df06d1a9312027e61ceae6c349820",
+  "counts": {
+    "original_source_tests": 824,
+    "P7A_regressions": 30,
+    "P7B_supplementary": 40
+  },
+  "reason": "Five supplementary contract-bound checks after initial mutation measurement. All earlier tests retained unchanged; source production unchanged. Initial campaign scores retained; new round evaluated on full unchanged mutant cohorts.",
+  "comparator_limit": "White-box adaptive hardening, not an independent estimate of defect discovery on unseen faults."
+}

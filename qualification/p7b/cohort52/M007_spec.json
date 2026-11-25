@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 728,
+  "col": 35,
+  "end_line": 728,
+  "kind": "comparison",
+  "index": 0,
+  "before": "IsNot",
+  "after": "Is",
+  "source": "type(hi) is not int",
+  "pool_id": "codeprobe_measurement_kernel.py:0105",
+  "id": "M007"
+}

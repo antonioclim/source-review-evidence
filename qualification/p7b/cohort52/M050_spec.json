@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_s01_observation_adapter.py",
+  "line": 76,
+  "col": 74,
+  "end_line": 76,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "applicability.get(\"reason\") or applicability.get(\"reason_code\") or \"Unavailable under the declared contract.\"",
+  "pool_id": "codeprobe_s01_observation_adapter.py:0001",
+  "id": "M050"
+}

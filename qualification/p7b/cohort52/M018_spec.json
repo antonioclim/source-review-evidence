@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 172,
+  "col": 100,
+  "end_line": 172,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotEq",
+  "after": "Eq",
+  "source": "rule['dimension_id'] != STRUCTURE",
+  "pool_id": "codeprobe_interpretation.py:0042",
+  "id": "M018"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 48,
+  "col": 7,
+  "end_line": 48,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "type(data) is not bytes or len(data) > 4_000_000",
+  "pool_id": "codeprobe_interpretation.py:0000",
+  "id": "M013"
+}

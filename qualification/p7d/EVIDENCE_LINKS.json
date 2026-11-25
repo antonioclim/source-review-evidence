@@ -1,0 +1,83 @@
+{
+  "schema": "codeprobe-p7d-evidence-lineage/1",
+  "links": [
+    {
+      "id": "A17.pairs",
+      "source": "experiment/pilot_summary.json",
+      "selector": "pairs",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "A17/pairs"
+    },
+    {
+      "id": "A17.decision",
+      "source": "experiment/pilot_summary.json",
+      "selector": "P6_strict_continuation",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "A17/strict_continuation"
+    },
+    {
+      "id": "A17.ineligible",
+      "source": "experiment/pilot_summary.json",
+      "selector": "ineligible_challenges",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "A17/ineligible"
+    },
+    {
+      "id": "A18.programs",
+      "source": "experiment/oracle.json",
+      "selector": "programs",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "A18/programs"
+    },
+    {
+      "id": "A18.obligations",
+      "source": "experiment/oracle.json",
+      "selector": "rows/*/comparisons",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "A18/checks"
+    },
+    {
+      "id": "regression.tests",
+      "source": "regression/result.json",
+      "selector": "rows",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "regression/tests"
+    },
+    {
+      "id": "protocol.historical",
+      "source": "protocol/raw.json",
+      "selector": "summary",
+      "derived": "views/NUMBERS.json",
+      "target_selector": "regression/legacy_protocol_checks"
+    },
+    {
+      "id": "oracle.erratum",
+      "source": "regression/oracle.json",
+      "selector": "limitations/1",
+      "derived": "views/legacy_oracle.current-wording.json",
+      "target_selector": "limitations/1"
+    },
+    {
+      "id": "environment.available",
+      "source": "environment/PREFLIGHT.json",
+      "selector": "packages/*/files",
+      "derived": "STAGED_INVENTORY.json",
+      "target_selector": "environment/dependencies/*"
+    },
+    {
+      "id": "environment.loaded",
+      "source": "protocol/IMPORTS.json",
+      "selector": "modules/*",
+      "derived": "STAGED_INVENTORY.json",
+      "target_selector": "environment/dependencies/site/*"
+    },
+    {
+      "id": "source.freeze",
+      "source": "experiments/p7c/FREEZE2.json",
+      "selector": "source_snapshot",
+      "derived": "INPUT_ADMISSION.json",
+      "target_selector": "freeze_sha256"
+    }
+  ],
+  "publication_assets_pending": true
+}

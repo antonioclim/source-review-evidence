@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 544,
+  "col": 7,
+  "end_line": 544,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotEq",
+  "after": "Eq",
+  "source": "evidence[\"profile_schema\"] != EVIDENCE_PROFILE_SCHEMA",
+  "pool_id": "codeprobe_review_contract.py:0079",
+  "id": "M045"
+}

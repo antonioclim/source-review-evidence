@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-20T21:26:34.469975+00:00",
+  "tests_sha256": "1006e915347d8db23b188756a7c584c0f2e506e82b1561844bffdbd4316faa39",
+  "mapping_sha256": "de65a3752e6ad9a22a3e12b25a8529c0be902efc9e055d1987db86fd16913285",
+  "original_cohort_sha256": "2b86ea1e93a6fbb9bfb4d06a52f7fa5cfe9235b04fd32686cb1ca7397fdbd8c6",
+  "thresholds": {
+    "branch_per_core": 0.85,
+    "mutation_per_core": 0.7
+  },
+  "mutation_execution_rule": "All 52 map entries retained. Run complete 13 formal+30 P7A+35 P7B tests, then oracle/claims. A demonstrated failing behavioural assertion kills. Surviving faults receive full original suite; stop early only after a behavioural counterexample. Syntax/infrastructure/hash-only rejection is INCONCLUSIVE, not killed. No equivalent exclusions. 40 exact original locations, 11 rebound operators, 1 explicitly semantic transport. All runs retained.",
+  "coverage_domain": "Six core files, direct Python subprocess descendants. Equivalent copied modules aggregate only with exact source hash at load. Non-Python children and process APIs without bootstrap are reported. No claim of complete system tracing."
+}

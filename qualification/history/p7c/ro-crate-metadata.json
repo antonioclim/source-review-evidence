@@ -1,0 +1,114 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "CodeProbe local P7C working candidate",
+      "description": "Intermediate local software qualification. Historical results remain historical; no submission, release or persistent identifier is asserted.",
+      "version": "P7-R4-review-candidate+a2p7c.1",
+      "creativeWorkStatus": "Unreleased intermediate candidate",
+      "license": {
+        "@id": "source/LICENSE"
+      },
+      "hasPart": [
+        {
+          "@id": "source/"
+        },
+        {
+          "@id": "protocol/"
+        },
+        {
+          "@id": "review/"
+        },
+        {
+          "@id": "results/"
+        },
+        {
+          "@id": "documentation/"
+        },
+        {
+          "@id": "qualification/"
+        },
+        {
+          "@id": "source/LICENSE"
+        },
+        {
+          "@id": "metadata/sbom.spdx.json"
+        },
+        {
+          "@id": "metadata/review-environment.observed.json"
+        },
+        {
+          "@id": "experiments/"
+        }
+      ]
+    },
+    {
+      "@id": "source/",
+      "@type": "Dataset",
+      "name": "source/"
+    },
+    {
+      "@id": "protocol/",
+      "@type": "Dataset",
+      "name": "protocol/"
+    },
+    {
+      "@id": "review/",
+      "@type": "Dataset",
+      "name": "review/"
+    },
+    {
+      "@id": "results/",
+      "@type": "Dataset",
+      "name": "results/"
+    },
+    {
+      "@id": "documentation/",
+      "@type": "Dataset",
+      "name": "documentation/"
+    },
+    {
+      "@id": "qualification/",
+      "@type": "Dataset",
+      "name": "qualification/"
+    },
+    {
+      "@id": "source/LICENSE",
+      "@type": "File",
+      "name": "source/LICENSE",
+      "contentSize": "1077",
+      "sha256": "660689f6f004532ab14f92a43c759fbfc8f5bdf60514c0510627a986e0e954d9"
+    },
+    {
+      "@id": "metadata/sbom.spdx.json",
+      "@type": "File",
+      "name": "metadata/sbom.spdx.json",
+      "contentSize": "4390",
+      "sha256": "501ed928e4c1143d347104ebc7e4ea8932ce4016a2f1a60148a91ca0bc820b50"
+    },
+    {
+      "@id": "metadata/review-environment.observed.json",
+      "@type": "File",
+      "name": "metadata/review-environment.observed.json",
+      "contentSize": "36970",
+      "sha256": "f281e68f6778fc3d05061ce94401de00e4810532c7591030cd0715830596823e"
+    },
+    {
+      "@id": "experiments/",
+      "@type": "Dataset",
+      "name": "Frozen synthetic studies and all diagnostic outcomes"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 647,
+  "col": 19,
+  "end_line": 647,
+  "kind": "comparison",
+  "index": 0,
+  "before": "In",
+  "after": "NotIn",
+  "source": "_normalise_identifier(str(key)) in LEGACY_DISCARDED_FIELDS",
+  "pool_id": "codeprobe_review_contract.py:0098",
+  "id": "M047"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 164,
+  "col": 57,
+  "end_line": 164,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotEq",
+  "after": "Eq",
+  "source": "p['task_families'] != ['source_inspection']",
+  "pool_id": "codeprobe_interpretation.py:0033",
+  "id": "M017"
+}

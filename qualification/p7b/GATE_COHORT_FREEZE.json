@@ -1,0 +1,20 @@
+{
+  "method": "12 equally spaced indices in sorted comparison/boolean AST candidate list, before any G-cohort executions",
+  "pool_size": 116,
+  "indices": [
+    0,
+    10,
+    21,
+    31,
+    42,
+    52,
+    63,
+    73,
+    84,
+    94,
+    105,
+    115
+  ],
+  "sha256": "d361df7045cf8b90131375dea9d46730299df06d1a9312027e61ceae6c349820",
+  "timestamp": "2026-09-20T21:29:03.016258+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 288,
+  "col": 36,
+  "end_line": 288,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotIn",
+  "after": "In",
+  "source": "language not in profile['languages']",
+  "pool_id": "codeprobe_interpretation.py:0084",
+  "id": "M023"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_numeric_policy.py",
+  "line": 80,
+  "col": 34,
+  "end_line": 80,
+  "kind": "comparison",
+  "index": 0,
+  "before": "IsNot",
+  "after": "Is",
+  "source": "type(right) is not float",
+  "pool_id": "codeprobe_numeric_policy.py:0007",
+  "id": "M031"
+}

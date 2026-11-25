@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_numeric_policy.py",
+  "line": 86,
+  "col": 7,
+  "end_line": 86,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "abs_tol < 0 or rel_tol < 0",
+  "pool_id": "codeprobe_numeric_policy.py:0009",
+  "id": "M033"
+}

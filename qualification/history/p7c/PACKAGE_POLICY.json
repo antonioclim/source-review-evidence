@@ -1,0 +1,12 @@
+{
+  "candidate_status": "local_unreleased_review_candidate",
+  "inner_zips": {},
+  "layout": "recursive",
+  "package": "CODEPROBE_APEX2_P7C_WORKING_CANDIDATE",
+  "schema": "codeprobe-package-policy/v1",
+  "documentary_revision": "APEX2/P7C",
+  "revision": "P7-R4-review-candidate+a2p7c.1",
+  "baseline_documentary_revision": "LP02/v3.2",
+  "current_verifier": "VERIFY.py",
+  "historical_policy": "qualification/history/P7B/PACKAGE_POLICY.json"
+}

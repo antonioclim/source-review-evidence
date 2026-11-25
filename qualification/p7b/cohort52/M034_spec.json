@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_numeric_policy.py",
+  "line": 86,
+  "col": 22,
+  "end_line": 86,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Lt",
+  "after": "LtE",
+  "source": "rel_tol < 0",
+  "pool_id": "codeprobe_numeric_policy.py:0011",
+  "id": "M034"
+}

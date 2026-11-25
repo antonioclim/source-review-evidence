@@ -1,0 +1,148 @@
+{
+  "schema": "codeprobe-a2-claim-scope/2",
+  "version": "2.0.0-a2p6",
+  "status": "APPROVED_NORMATIVE_SUCCESSOR_NOT_YET_PRODUCTION",
+  "claims": [
+    {
+      "id": "P6-C01",
+      "prior_claim": "The bounded native route exposes six separately checkable gates: source admission, observation availability, value/codomain conformance, source-evidence adequacy, policy interpretation and consumer admission/source replay.",
+      "normative_claim": "The declared route exposes six separately specified verification obligations, with availability distinguished from valid state representation and full consumer admission distinguished from partial replay results.",
+      "scope": "Bounded Python/Markdown/text route and declared consumer; no statement about static analysis in general.",
+      "falsifier": "A required predicate is equivocal, a precondition is silently bypassed or an unevaluated/invalid subcheck is promoted to PASS.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C02",
+      "prior_claim": "Passing one named gate does not substitute for passing selected other gates: the supplied bounded witnesses refute five specified implications.",
+      "normative_claim": "Four named gate-to-gate implications have admissible counterexamples; a fifth two-profile example demonstrates that a conforming value alone does not determine a unique policy outcome.",
+      "scope": "Four specified non-implications and one relational policy case only; no statistical or all-pairs independence.",
+      "falsifier": "Any of the four witnesses lacks a valid predecessor or a false target under one context, or the policy case lacks equal values, conformant evaluations or distinct outcomes.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C03",
+      "prior_claim": "The four-state applicability contract distinguishes observed zero from not_applicable, insufficient_evidence and unavailable.",
+      "normative_claim": "The four-state applicability contract distinguishes observed zero from not_applicable, insufficient_evidence and unavailable.",
+      "scope": "Records admitted by the candidate measurement-kernel contract.",
+      "falsifier": "A non-observed record with a non-null value, an observed record with null, or an observed zero coerced to an unavailable state.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C04",
+      "prior_claim": "For the monotone predicate x>t over an integer threshold interval [L,U], the endpoint outcomes determine the three-state projection: no_rule_trigger, abstain or review_opportunity.",
+      "normative_claim": "For the monotone predicate x>t over an integer threshold interval [L,U], the endpoint outcomes determine the three-state projection: no_rule_trigger, abstain or review_opportunity.",
+      "scope": "Monotone predicate x>t and declared integer domain only.",
+      "falsifier": "One admissible integer tuple (L,U,nominal,x) for which the full interval and endpoint projection differ.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C05",
+      "prior_claim": "Callable decision counts, offset complexity and nesting follow finite AST conventions, and traversal evidence must cover every visited source span in the generated diagnostic domain.",
+      "normative_claim": "Callable decision counts, offset complexity and nesting follow finite AST conventions, and traversal evidence must cover every visited source span in the generated diagnostic domain.",
+      "scope": "CPython AST representation and declared finite visitor; not universal CFG complexity.",
+      "falsifier": "A generated admitted callable for which the independent recursive walker disagrees, or a visited span lies outside admitted traversal evidence.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C06",
+      "prior_claim": "The candidate separates stable observation-slot identity from deterministic result-content identity: record_id binds specification plus logical entity, while measurement_digest binds artifact, evidence and observation content.",
+      "normative_claim": "The candidate separates stable observation-slot identity from deterministic result-content identity: record_id binds specification plus logical entity, while measurement_digest binds artifact, evidence and observation content.",
+      "scope": "record_id is stable only within a declared measurement-result scope and is not globally unique.",
+      "falsifier": "Evidence-only content changes alter record_id, content changes preserve measurement_digest, or a specification-version change preserves the affected record_id.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C07",
+      "prior_claim": "Structural validity and internal digest consistency are insufficient for coordinate adequacy or source replay; later gates may reject a self-consistent record.",
+      "normative_claim": "Structural validity and internal digest consistency are insufficient for coordinate adequacy or source replay; later gates may reject a self-consistent record.",
+      "scope": "Named generated adversarial records; no prevalence claim.",
+      "falsifier": "The target gate accepts every named adversarial record or the earlier gate did not actually pass.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    },
+    {
+      "id": "P6-C08",
+      "prior_claim": "The candidate declares decision-point count as ratio, offset McCabe-style C=1+d as ordinal, exact decimal comparison with an inclusive boundary and conservative binary64 boundary diagnosis.",
+      "normative_claim": "Under the stated finite-value domain, the revised numeric contract requires exact lexical-decimal comparison with inclusive equality and sound conservative binary64 admission; indeterminate results never pass. The count/ordinal policy convention is retained.",
+      "scope": "Prospective local candidate only; no reinterpretation of historical CE09/CE11 outputs.",
+      "falsifier": "An admitted finite decimal comparison differs from exact rational arithmetic, its numeric serialisation loses value, or binary64 admission accepts any case containing a represented value outside tolerance.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "Reference design checked; original production component remains CONTRADICTED by A2-P3-F01."
+    },
+    {
+      "id": "P6-C09",
+      "prior_claim": "The retained evidence establishes bounded existence and contract behaviour, without estimating natural-project prevalence, human benefit, economic effect, universal correctness or independent replication.",
+      "normative_claim": "The retained evidence establishes bounded existence and contract behaviour, without estimating natural-project prevalence, human benefit, economic effect, universal correctness or independent replication.",
+      "scope": "Submission framing and interpretation rule.",
+      "falsifier": "Any principal conclusion or decision rule depends on a population, causal, economic or universal claim not supported by the retained evidence.",
+      "canonical_P7_status": "PENDING_INTEGRATION_AND_EXECUTION",
+      "P6_scope": "formal/design only; historical production evidence remains separately labelled"
+    }
+  ],
+  "historical_context_claims": [
+    {
+      "id": "H-C07",
+      "source_claim": "C07",
+      "statement": "197 failures across 95 identifiers and related S03 totals",
+      "reason": "CE09 exact package and runtime matrix absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C08",
+      "source_claim": "C08",
+      "statement": "72 aligned-input agreement with Radon 6.0.1 and Ruff 0.16.7",
+      "reason": "CE11 exact source/runtime distributions absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C09",
+      "source_claim": "C09",
+      "statement": "288 historical decision projections",
+      "reason": "exact wrapper records absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C10",
+      "source_claim": "C10",
+      "statement": "99/189 incomplete covers reduced to zero",
+      "reason": "exact CE09 pre/post corpus absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C15",
+      "source_claim": "C15",
+      "statement": "157 inputs, ten tables, 96 rows, 570 cells, 16 files and 42 constraints",
+      "reason": "exact reconstruction package absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C16",
+      "source_claim": "C16",
+      "statement": "28 unchanged files, 54 fixtures, 1,422 checks, 189 covers and 40 envelopes",
+      "reason": "exact native qualification package absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C17",
+      "source_claim": "C17",
+      "statement": "30 attempts, 24 capsules, six refusals and 80 boundary checks",
+      "reason": "exact profile corpus/run absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C18",
+      "source_claim": "C18",
+      "statement": "103+4 replay, 1,100/1,101 predicates, 1,357 comparisons and 19 triplets",
+      "reason": "CE11 replay package and third-party bytes absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    }
+  ],
+  "historic_fields_note": "All statuses inside historical_context_claims refer to preserved historical claims; no new validation.",
+  "retained_history": "../evidence/prior_protocol/APEX_P6_CodeProbe_ClaimScopeFreeze_v1.json"
+}

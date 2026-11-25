@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 353,
+  "col": 11,
+  "end_line": 353,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Is",
+  "after": "IsNot",
+  "source": "raw_value is None",
+  "pool_id": "codeprobe_review_contract.py:0029",
+  "id": "M040"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 505,
+  "col": 69,
+  "end_line": 505,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotIn",
+  "after": "In",
+  "source": "input_record.get(\"kind\") not in {\"file\", \"project\"}",
+  "pool_id": "codeprobe_review_contract.py:0069",
+  "id": "M044"
+}

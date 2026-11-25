@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 78,
+  "col": 7,
+  "end_line": 78,
+  "kind": "boolean",
+  "index": 0,
+  "before": "Or",
+  "after": "And",
+  "source": "type(value) is not dict or set(value) != expected",
+  "pool_id": "codeprobe_interpretation.py:0008",
+  "id": "M014"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "codeprobe-a2-p7c-work-revision/1",
+  "revision": "P7-R4-review-candidate+a2p7c.1",
+  "base_candidate": "P7-R4-review-candidate",
+  "base_editorial_kit": "LP02/v3.2",
+  "base_kit_sha256": "27129065cd845e57f03e7ae68b18bfec049c35ddac4f707761f777b24214d1e6",
+  "protocol_parent_sha256": "25f9b298926b3a717232653deb5382e0f8f30a38b60e8b976e7902524533e0b1",
+  "policy_id": "codeprobe-numeric-comparison/2.0.0-a2p7a",
+  "gate_schema": "codeprobe-evidence-gates/1.0.0-a2p7a",
+  "submission_ready": false,
+  "public_release": false,
+  "old_results_role": "immutable historical reference, no new admission inferred",
+  "old_manifests_role": "source release receipts unchanged; new working inventory separate",
+  "target_unchanged": true,
+  "A17_pilot_executed": true,
+  "A18_experiment_executed": true,
+  "new_dependencies": [
+    "Python standard-library fractions only; no installed package"
+  ],
+  "resource_policy": "max_work_digits is optional, defaults None. Explicit resource refusal returns no scientific verdict. Host budgets still required for untrusted unbounded magnitudes.",
+  "parent_revision": "P7-R4-review-candidate+a2p7b.1",
+  "source_production_changes_in_P7B": false,
+  "source_tests_unchanged": true,
+  "qualification": "Executed finite A17/A18 studies; A17 retains eligibility and fidelity limits. Source and historical tests unchanged; not submission-ready.",
+  "Q07": "NOT_QUALIFIED",
+  "A19_A20_active": false,
+  "A17_strict_continuation": "NOT_MET",
+  "source_production_changes_in_P7C": false
+}

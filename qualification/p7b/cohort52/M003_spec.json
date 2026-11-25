@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 376,
+  "col": 51,
+  "end_line": 376,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Is",
+  "after": "IsNot",
+  "source": "re.fullmatch(r\"observation:[0-9a-f]{64}\", record[\"record_id\"]) is None",
+  "pool_id": "codeprobe_measurement_kernel.py:0035",
+  "id": "M003"
+}

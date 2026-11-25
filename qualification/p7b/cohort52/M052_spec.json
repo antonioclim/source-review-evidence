@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_s01_observation_adapter.py",
+  "line": 98,
+  "col": 72,
+  "end_line": 98,
+  "kind": "comparison",
+  "index": 0,
+  "before": "NotEq",
+  "after": "Eq",
+  "source": "key != \"fingerprint\"",
+  "pool_id": "codeprobe_s01_observation_adapter.py:0003",
+  "id": "M052"
+}

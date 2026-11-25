@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_s01_observation_adapter.py",
+  "line": 76,
+  "col": 28,
+  "end_line": 76,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Eq",
+  "after": "NotEq",
+  "source": "applicability[\"state\"] == \"observed\"",
+  "pool_id": "codeprobe_s01_observation_adapter.py:0000",
+  "id": "M049"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_interpretation.py",
+  "line": 214,
+  "col": 67,
+  "end_line": 214,
+  "kind": "comparison",
+  "index": 0,
+  "before": "IsNot",
+  "after": "Is",
+  "source": "record is not None",
+  "pool_id": "codeprobe_interpretation.py:0067",
+  "id": "M021"
+}

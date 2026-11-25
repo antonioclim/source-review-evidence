@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_review_contract.py",
+  "line": 315,
+  "col": 38,
+  "end_line": 315,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Lt",
+  "after": "LtE",
+  "source": "len(value) < minimum",
+  "pool_id": "codeprobe_review_contract.py:0020",
+  "id": "M039"
+}

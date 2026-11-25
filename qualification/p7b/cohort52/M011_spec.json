@@ -1,0 +1,13 @@
+{
+  "file": "codeprobe_measurement_kernel.py",
+  "line": 1185,
+  "col": 12,
+  "end_line": 1185,
+  "kind": "comparison",
+  "index": 0,
+  "before": "Eq",
+  "after": "NotEq",
+  "source": "record[\"observation_id\"] == \"python.callable.physical_span_lines\"",
+  "pool_id": "codeprobe_measurement_kernel.py:0175",
+  "id": "M011"
+}
