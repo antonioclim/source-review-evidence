@@ -1,0 +1,29 @@
+{
+  "schema": "source-review-evidence-rp3-preparation/1",
+  "build_kind": "prepared_initial_distribution",
+  "date": "2026-11-24",
+  "version": "1.0.0",
+  "scope": "Initial release packaging and component-rights sidecars. This record does not assert external publication or a new research execution.",
+  "input_distribution_manifest_sha256": "9f7af9812eb9e8b15cfbb26b8d15bcdbde9b84207b87e15cbeb527cff03afba3",
+  "retained_execution_receipt": "validation/RP2_VALIDATION.json",
+  "retained_execution_receipt_sha256": "c05b59f060fc9275cf5e7b075ad7b67a3b985d8d1799471fe7d71670903cd33b",
+  "source_component_files_unchanged": 172,
+  "frozen_computational_files_byte_identical": 8063,
+  "tested_runtime_input_digest": "ffca5cd5b0afb397a38d6c84b65f3e966577f633897cbaa67d5f1923830e8551",
+  "runtime_and_selected_test_hashes_match_retained_receipt": true,
+  "distribution_verifier_sha256": "c976765f6f9e00e31d1ba7802def8b5d66b848e69b2d7819a5733472194b3ac3",
+  "local_check_runner_sha256": "efec38b304be210d17311045fbfced151e43d5dd492694016beec14d22cf08d7",
+  "rights_sidecars": [
+    "LICENSE",
+    "LICENSING.json",
+    "LICENSING_MAP.json",
+    "docs/COMPONENT_RIGHTS.md"
+  ],
+  "licensing_changes_frozen_bytes": false,
+  "research_results_regenerated": false,
+  "strict_reproduction_performed": false,
+  "native_qualification_performed": false,
+  "A17": "NOT_MET",
+  "Q07": "NOT_QUALIFIED_NOT_WAIVED",
+  "public_identifier_policy": "Use the actual public record metadata for the version DOI and publication date. Do not infer them from the preparation date."
+}

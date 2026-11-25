@@ -1,0 +1,71 @@
+{
+  "schema": "source-review-evidence-github-view-validation/1",
+  "version": "1.0.0",
+  "status": "PASS_SCOPED_PREPARATION_CHECKS",
+  "scope": "GitHub browsing-view preparation; no new scientific result or full regression run.",
+  "python_environment": {
+    "version": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "actual_documentary_tests": {
+    "path": "source/tests/test_documentation_resources.py",
+    "sha256": "326866f3859e41a3c4982076c4f7c35f3a9dd88739c4825fac950b8f4328fc89",
+    "run_on_separate_copy": true,
+    "methods": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0
+  },
+  "actual_test_discovery": {
+    "runner": "tools/run_local_checks.py",
+    "sha256": "efec38b304be210d17311045fbfced151e43d5dd492694016beec14d22cf08d7",
+    "status": "LISTED_NOT_EXECUTED",
+    "selected_python_methods": 482,
+    "selected_node_suites": 2,
+    "methods_executed_by_discovery": 0,
+    "execution_copy": true
+  },
+  "retained_component_validation": {
+    "path": "validation/RP2_VALIDATION.json",
+    "sha256": "c05b59f060fc9275cf5e7b075ad7b67a3b985d8d1799471fe7d71670903cd33b",
+    "meaning": "Earlier execution receipt retained unchanged; not a new execution of its full cohort."
+  },
+  "byte_congruence": {
+    "source_component_files_retained": 172,
+    "source_component_changed": 0,
+    "distinct_inputs_matched_to_RP2_receipt": 74,
+    "mismatches": [],
+    "checks_preserved_input_bytes": true
+  },
+  "markdown": {
+    "markdown_files": 65,
+    "relative_links_checked": 391,
+    "link_errors": [],
+    "unclosed_fences": [],
+    "authorial_disclosure_matches": [],
+    "external_links_not_live_checked": 18,
+    "native_rendering_performed": false
+  },
+  "integrity": {
+    "manifest": "DISTRIBUTION_MANIFEST.json",
+    "verifier": "tools/verify_distribution.py",
+    "scope": "The view manifest binds the final serialized files. Its final digest and actual verifier result are held in the external build receipt to avoid a self-reference cycle."
+  },
+  "complete_archive": {
+    "filename": "source-review-evidence-1.0.0.zip",
+    "bytes": 18194848,
+    "sha256": "a72ea93af892aecfc0c4d7ad3821e045f348183ea50dcfa4613f9b414d5b77e7",
+    "file_count": 8437,
+    "manifest_copy": "provenance/COMPLETE_ARCHIVE_MANIFEST.json",
+    "manifest_sha256": "0032bdd08d9d0982b0498c812a63bbbc9c23f754f67857a016c867cfda2a1aae",
+    "transformation_record_copy": "provenance/COMPLETE_ARCHIVE_CHANGES.json",
+    "transformation_record_sha256": "d807e20bf18e681cc308a1614cd9799fe0a13a1e462c3eeef662ba8739b7e3ca"
+  },
+  "full_regression_cohort_reexecuted": false,
+  "scientific_experiments_run": false,
+  "strict_reproduction": false,
+  "native_browser_pyodide_qualification": false,
+  "clean_installation_qualification": false,
+  "A17": "NOT_MET",
+  "Q07": "NOT_QUALIFIED_NOT_WAIVED"
+}
