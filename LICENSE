@@ -1,0 +1,48 @@
+Source Review Evidence 1.0.0 — licence scope
+
+Different components of this distribution have different terms. The scope
+below and LICENSING_MAP.json identify the applicable component licences.
+Copyright (c) 2026 Antonio Clim for his own material, except where an existing
+notice identifies another holder. All existing notices remain in effect.
+
+CODE — MIT
+
+Author-controlled programme code, browser source, helpers, tests, functional
+configuration and historical code snapshots are licensed under MIT. The same
+terms apply to the author's code quoted in JSON, JSONL, logs, documentation
+or patches. The complete terms are in LICENSES/MIT.txt. Preserve all applicable
+copyright and permission notices, including the original CodeProbe
+contributors notice retained in source/LICENSE and its historical copy.
+
+DOCUMENTATION, FIGURES AND RESEARCH RECORDS — CC BY 4.0
+
+Author-controlled distribution documentation, included figures, constructed
+inputs, computational records and collection/database rights are licensed
+under Creative Commons Attribution 4.0 International, to the extent of the
+copyright and similar rights the author is entitled to grant. The complete
+terms are in LICENSES/CC-BY-4.0.txt and at
+https://creativecommons.org/licenses/by/4.0/legalcode.en.
+
+Attribute this material to Antonio Clim, Source Review Evidence, version
+1.0.0, retain the supplied provenance and indicate modifications. No exclusive
+copyright is asserted in bare facts. Existing MIT-covered documentation
+remains available under its existing MIT permission; this notice does not
+withdraw or narrow that permission.
+
+EXCEPTIONS AND MIXED MATERIAL
+
+1. Existing licence and attribution notices retain their original terms.
+2. SPDX documents declaring dataLicense: CC0-1.0 retain CC0 for their metadata
+   only. This does not license the software or research material they describe.
+3. Code and record portions retain their separate terms. CC BY for a record
+   does not relicense code, a third-party extract or an original notice inside it.
+4. Third-party material retains its own terms. References to dependencies,
+   runtimes or comparator tools do not grant rights over their implementations.
+   A component's external availability is separate from this distribution.
+5. The manuscript, OR1, original OR2 archive and publisher materials are not
+   included in this new distribution licence. They are not licensed for public
+   redistribution by their mention in the provenance.
+
+See docs/COMPONENT_RIGHTS.md and LICENSING_MAP.json for the component scope.
+The licence texts themselves remain the unmodified standard terms; this
+scope notice does not add restrictions to them or remove prior permissions.

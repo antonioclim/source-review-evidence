@@ -1,0 +1,21 @@
+{
+  "c02_execution": "five live constructed witnesses",
+  "candidate_revision": "R4",
+  "canonical_outputs": 6,
+  "declared_skips": 1,
+  "errors": 0,
+  "failures": 0,
+  "full_seconds": 164.687808,
+  "network_policy": {
+    "external_network_intentional_use": false,
+    "external_network_required": false,
+    "loopback_used_by_source_tests": true,
+    "statement": "No external network access is required or intentionally used. The source test suite intentionally exercises loopback-only HTTP and process fixtures; syscall-level telemetry was not collected.",
+    "telemetry": "not_syscall_instrumented"
+  },
+  "reference_mismatches": 0,
+  "schema": "codeprobe-r4-candidate-qualification/v1",
+  "smoke_seconds": 6.76606,
+  "source_tests": 824,
+  "status": "PASS"
+}

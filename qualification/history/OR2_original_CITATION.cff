@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  This is a local, unreleased peer-review artefact. Cite the article title and
+  the exact archive SHA-256 supplied with the submission. Do not cite this
+  package as CodeProbe v2.3.0 and do not infer a public tag, release or DOI.
+type: software
+title: "CodeProbe: Evidence Gates Can Fail Separately in Heuristic Source Review - P7-R4 local review candidate"
+authors:
+  - family-names: Clim
+    given-names: Antonio
+    orcid: "https://orcid.org/0000-0003-4745-0431"
+    affiliation: "Bucharest University of Economic Studies"
+version: "P7-R4-review-candidate"
+license: MIT
+abstract: >-
+  Local unreleased review package binding nine bounded claims to executable
+  obligations, live counterexamples, deterministic outputs and a SHA-256
+  results manifest. The public CodeProbe v2.3.0 release is retained separately
+  under source/ as lineage and is not the identity of this package.
+keywords:
+  - software quality
+  - evidence gates
+  - claims-as-tests
+  - result provenance
+  - computational reproducibility

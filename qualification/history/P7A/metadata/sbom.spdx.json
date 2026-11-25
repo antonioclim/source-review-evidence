@@ -1,0 +1,41 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "annotations": [
+    {
+      "annotationDate": "2026-09-19T00:00:00Z",
+      "annotationType": "OTHER",
+      "annotator": "Tool: APEX-P7-local-builder",
+      "comment": "Review harness uses Python standard library plus declared jsonschema for protocol validation; source retains third-party notices. Network access is not required; syscall telemetry was not collected."
+    }
+  ],
+  "creationInfo": {
+    "created": "2026-09-19T00:00:00Z",
+    "creators": [
+      "Tool: APEX-P7-local-builder"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "urn:uuid:27d6671e-12c0-5c6a-b7ff-23a1fcefc207",
+  "name": "CodeProbe-P7-R4-review-candidate-SBOM",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "name": "CodeProbe-P7-R4-review-candidate",
+      "versionInfo": "P7-R4-review-candidate-v2"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-Package",
+      "relationshipType": "DESCRIBES",
+      "spdxElementId": "SPDXRef-DOCUMENT"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

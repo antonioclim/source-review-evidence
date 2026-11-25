@@ -1,0 +1,7 @@
+kit_id,name,role,claims_carried,maturity_K,execution_level,reviewer_smoke_seconds,reviewer_full_seconds,owner,status,notes
+K-P7-R4-CORE,CodeProbe P7-R4 local review candidate,reproduction + demonstration + reviewer quick start,"P6-C01,P6-C02,P6-C03,P6-C04,P6-C05,P6-C06,P6-C07,P6-C08,P6-C09",3,E4 for retained bounded claims,6.766,164.688,AUTHOR+BOARD,LOCAL_UNRELEASED_REVIEW_CANDIDATE,R4 live-witness C02; candidate-specific root CFF; public v2.3.0 retained under source/; CE09/CE11 excluded from principal evidence.
+K1,Submission Kit,submission packaging,none in Phase-7 claim set,2,E3 baseline,,,AUTHOR,REBUILT_R4_CANDIDATE,Cross-component R4 rebuild; final status reserved for independent R5 validation.
+K2,GitHub Kit,public-source packaging,none in Phase-7 claim set,2,E3 baseline,,,AUTHOR,REBUILT_R4_CANDIDATE,Cross-component R4 rebuild; final status reserved for independent R5 validation.
+K3,Zenodo Kit,archival packaging,none in Phase-7 claim set,2,E3 baseline,,,AUTHOR,REBUILT_R4_CANDIDATE,Cross-component R4 rebuild; final status reserved for independent R5 validation.
+K4,Figures Kit,editable and rendered figures,none in Phase-7 claim set,2,E3 baseline,,,AUTHOR,REBUILT_R4_CANDIDATE,Cross-component R4 rebuild; final status reserved for independent R5 validation.
+K5,Submission Guide Kit,author operational guide,none in Phase-7 claim set,2,E3 baseline,,,AUTHOR,REBUILT_R4_CANDIDATE,Cross-component R4 rebuild; final status reserved for independent R5 validation.

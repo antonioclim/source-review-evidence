@@ -1,0 +1,174 @@
+{
+  "schema": "apex-codeprobe-claim-scope-freeze/v1",
+  "date": "2026-09-19",
+  "strategy": "BOUNDED_CURRENT_EVIDENCE",
+  "retained_principal_claims": [
+    {
+      "id": "P6-C01",
+      "source_claims": "C02",
+      "principal": "yes",
+      "claim": "The bounded native route exposes six separately checkable gates: source admission, observation availability, value/codomain conformance, source-evidence adequacy, policy interpretation and consumer admission/source replay.",
+      "class": "FORMAL+EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "APEX_P6_CodeProbe_FormalBoundarySpecification_v2.md §§2–3; public v2.3.0 source; P3-T04–P3-T07 PASS",
+      "falsifier": "A declared route state that cannot be assigned to one gate without overlap or omission, or code that silently bypasses a gate.",
+      "scope": "Bounded Python/Markdown/text route and declared consumer; no statement about static analysis in general."
+    },
+    {
+      "id": "P6-C02",
+      "source_claims": "C01,C22",
+      "principal": "yes",
+      "claim": "Passing one named gate does not substitute for passing selected other gates: the supplied bounded witnesses refute five specified implications.",
+      "class": "FORMAL+EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "P3-T04–P3-T07 and P3-T14 PASS; APEX_P6_CodeProbe_FormalObligations_v1.csv",
+      "falsifier": "Any named witness fails its predecessor gate, does not fail its target gate, or depends on an undeclared domain shift.",
+      "scope": "Five specified failed implications only; no statistical independence or all-pairs logical independence."
+    },
+    {
+      "id": "P6-C03",
+      "source_claims": "C04",
+      "principal": "yes",
+      "claim": "The four-state applicability contract distinguishes observed zero from not_applicable, insufficient_evidence and unavailable.",
+      "class": "EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "src/codeprobe_measurement_kernel.py applicability validator; P6-T06; candidate schema validation",
+      "falsifier": "A non-observed record with a non-null value, an observed record with null, or an observed zero coerced to an unavailable state.",
+      "scope": "Records admitted by the candidate measurement-kernel contract."
+    },
+    {
+      "id": "P6-C04",
+      "source_claims": "C05,C09(partial)",
+      "principal": "yes",
+      "claim": "For the monotone predicate x>t over an integer threshold interval [L,U], the endpoint outcomes determine the three-state projection: no_rule_trigger, abstain or review_opportunity.",
+      "class": "FORMAL+EXECUTABLE",
+      "severity": "SV3",
+      "status": "PASS_PHASE6",
+      "evidence": "General proof in FormalBoundarySpecification v2; independent exhaustive comparison over 3,948 cases in P6-T01 and P3-T01",
+      "falsifier": "One admissible integer tuple (L,U,nominal,x) for which the full interval and endpoint projection differ.",
+      "scope": "Monotone predicate x>t and declared integer domain only."
+    },
+    {
+      "id": "P6-C05",
+      "source_claims": "C06,C12",
+      "principal": "yes",
+      "claim": "Callable decision counts, offset complexity and nesting follow finite AST conventions, and traversal evidence must cover every visited source span in the generated diagnostic domain.",
+      "class": "EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "P3-T02/P3-T03/P3-T04/P3-T14 PASS; candidate source retains traversal algorithm and evidence cover",
+      "falsifier": "A generated admitted callable for which the independent recursive walker disagrees, or a visited span lies outside admitted traversal evidence.",
+      "scope": "CPython AST representation and declared finite visitor; not universal CFG complexity."
+    },
+    {
+      "id": "P6-C06",
+      "source_claims": "C11,P3-F05",
+      "principal": "yes",
+      "claim": "The candidate separates stable observation-slot identity from deterministic result-content identity: record_id binds specification plus logical entity, while measurement_digest binds artifact, evidence and observation content.",
+      "class": "FORMAL+EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "research/identity-contract.v1.json; failing-before/passing-after P6 tests; P6-T04",
+      "falsifier": "Evidence-only content changes alter record_id, content changes preserve measurement_digest, or a specification-version change preserves the affected record_id.",
+      "scope": "record_id is stable only within a declared measurement-result scope and is not globally unique."
+    },
+    {
+      "id": "P6-C07",
+      "source_claims": "C13",
+      "principal": "yes",
+      "claim": "Structural validity and internal digest consistency are insufficient for coordinate adequacy or source replay; later gates may reject a self-consistent record.",
+      "class": "EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "P3-T04 narrowed locator and P3-T07 rehashed mutation PASS",
+      "falsifier": "The target gate accepts every named adversarial record or the earlier gate did not actually pass.",
+      "scope": "Named generated adversarial records; no prevalence claim."
+    },
+    {
+      "id": "P6-C08",
+      "source_claims": "P3-F01,P3-F04",
+      "principal": "yes",
+      "claim": "The candidate declares decision-point count as ratio, offset McCabe-style C=1+d as ordinal, exact decimal comparison with an inclusive boundary and conservative binary64 boundary diagnosis.",
+      "class": "FORMAL+EXECUTABLE",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "measurement-scale-contract.v2.json; numeric-comparison-policy.v1.json; 12 failing-before/passing-after tests; P6-T03/P6-T05",
+      "falsifier": "A ratio interpretation of C remains in the candidate contract, exact decimal boundary evaluation is nondeterministic, or an indeterminate binary boundary is admitted as a pass.",
+      "scope": "Prospective local candidate only; no reinterpretation of historical CE09/CE11 outputs."
+    },
+    {
+      "id": "P6-C09",
+      "source_claims": "C14",
+      "principal": "yes",
+      "claim": "The retained evidence establishes bounded existence and contract behaviour, without estimating natural-project prevalence, human benefit, economic effect, universal correctness or independent replication.",
+      "class": "JUDGEMENT",
+      "severity": "SV2",
+      "status": "PASS_PHASE6",
+      "evidence": "ClaimScopeFreeze v1; Protocol v1 scope and exclusion rules; Deviation Log v1",
+      "falsifier": "Any principal conclusion or decision rule depends on a population, causal, economic or universal claim not supported by the retained evidence.",
+      "scope": "Submission framing and interpretation rule."
+    }
+  ],
+  "historical_context_claims": [
+    {
+      "id": "H-C07",
+      "source_claim": "C07",
+      "statement": "197 failures across 95 identifiers and related S03 totals",
+      "reason": "CE09 exact package and runtime matrix absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C08",
+      "source_claim": "C08",
+      "statement": "72 aligned-input agreement with Radon 6.0.1 and Ruff 0.16.7",
+      "reason": "CE11 exact source/runtime distributions absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C09",
+      "source_claim": "C09",
+      "statement": "288 historical decision projections",
+      "reason": "exact wrapper records absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C10",
+      "source_claim": "C10",
+      "statement": "99/189 incomplete covers reduced to zero",
+      "reason": "exact CE09 pre/post corpus absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C15",
+      "source_claim": "C15",
+      "statement": "157 inputs, ten tables, 96 rows, 570 cells, 16 files and 42 constraints",
+      "reason": "exact reconstruction package absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C16",
+      "source_claim": "C16",
+      "statement": "28 unchanged files, 54 fixtures, 1,422 checks, 189 covers and 40 envelopes",
+      "reason": "exact native qualification package absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C17",
+      "source_claim": "C17",
+      "statement": "30 attempts, 24 capsules, six refusals and 80 boundary checks",
+      "reason": "exact profile corpus/run absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    },
+    {
+      "id": "H-C18",
+      "source_claim": "C18",
+      "statement": "103+4 replay, 1,100/1,101 predicates, 1,357 comparisons and 19 triplets",
+      "reason": "CE11 replay package and third-party bytes absent",
+      "status": "UNVERIFIED_CONTEXT_ONLY"
+    }
+  ],
+  "reversibility": "Historical claims may re-enter the principal set only after exact packages, bytes, runtimes and manifests pass the required reproduction gate."
+}

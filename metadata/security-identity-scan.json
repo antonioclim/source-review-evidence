@@ -1,0 +1,36 @@
+{
+  "active_credential_candidates": 0,
+  "classified_fixture_matches": [
+    {
+      "disposition": "retained; test asserts the value is not disclosed in diagnostic output",
+      "line": 847,
+      "path": "source/tests/test_final_package_audit.py",
+      "value_class": "deliberate negative secret-leak fixture"
+    },
+    {
+      "disposition": "retained negative input",
+      "line": 807,
+      "path": "source/tests/test_dependency_boundary.py",
+      "value_class": "invalid URL fixture containing user@evil.example"
+    },
+    {
+      "disposition": "retained negative input",
+      "line": 140,
+      "path": "source/tests/test_pyodide_fixture.py",
+      "value_class": "invalid URL fixture containing user@fixture.invalid"
+    }
+  ],
+  "historical_sandbox_paths": [
+    {
+      "disposition": "non-personal historical provenance; not an operational dependency",
+      "path": "protocol/APEX_P3_CodeProbe_AuditHarnessResults_v1.json"
+    }
+  ],
+  "identity_anonymisation_required": false,
+  "licence_notes": "Source LICENSE and THIRD_PARTY_NOTICES retained; CE11 is absent and not distributed.",
+  "network_scan": "no network used",
+  "personal_data_candidates": 0,
+  "review_model": "single-blind",
+  "schema": "codeprobe-p7-security-identity-scan/v1",
+  "status": "PASS_WITH_CLASSIFIED_FIXTURES"
+}

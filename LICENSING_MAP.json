@@ -1,0 +1,2105 @@
+{
+  "schema": "source-review-evidence-component-licensing/1",
+  "project": "Source Review Evidence",
+  "version": "1.0.0",
+  "rights_holder_for_new_own_material": "Antonio Clim",
+  "rules": [
+    "The map allocates terms to the corresponding author-controlled component or portion. Third-party material retains its own terms.",
+    "Existing MIT grants and their copyright/permission notices remain effective, including associated documentation already covered by MIT.",
+    "Code does not become CC BY merely because it appears inside a record, log or document. Author-controlled code is MIT; third-party code retains its original terms.",
+    "SPDX dataLicense applies to the SPDX metadata only. It does not license the described packages or research collection.",
+    "No exclusive copyright is asserted in bare facts. CC BY applies to author-controlled copyright and similar rights, including any applicable collection/database rights.",
+    "Current byte identities are recorded in DISTRIBUTION_MANIFEST.json. This allocation map deliberately does not duplicate those hashes."
+  ],
+  "file_count": 374,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": ".gitignore",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "CITATION.cff",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "DISTRIBUTION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "DISTRIBUTION_MANIFEST.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "GITHUB_VIEW.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "LICENSE",
+      "category": "LICENCE_TEXT_OR_SCOPE_NOTICE",
+      "terms_for_corresponding_own_material": "Licence text and scope notice; no change to the standard terms or their original provenance."
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "category": "LICENCE_TEXT_OR_SCOPE_NOTICE",
+      "terms_for_corresponding_own_material": "Licence text and scope notice; no change to the standard terms or their original provenance."
+    },
+    {
+      "path": "LICENSES/MIT-existing-source.txt",
+      "category": "LICENCE_TEXT_OR_SCOPE_NOTICE",
+      "terms_for_corresponding_own_material": "Licence text and scope notice; no change to the standard terms or their original provenance."
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "category": "LICENCE_TEXT_OR_SCOPE_NOTICE",
+      "terms_for_corresponding_own_material": "Licence text and scope notice; no change to the standard terms or their original provenance."
+    },
+    {
+      "path": "LICENSES/README.md",
+      "category": "CC_BY_DOCUMENTATION_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0; preserve quoted licence terms and existing third-party notices."
+    },
+    {
+      "path": "LICENSING.json",
+      "category": "CC_BY_DOCUMENTATION_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0; preserve quoted licence terms and existing third-party notices."
+    },
+    {
+      "path": "LICENSING_MAP.json",
+      "category": "CC_BY_DOCUMENTATION_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0; preserve quoted licence terms and existing third-party notices."
+    },
+    {
+      "path": "README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "REPRODUCE.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERIFY.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERIFY_DOCSYNC.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERIFY_METADATA.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERIFY_P7A.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERIFY_P7B.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERIFY_REPRODUCTION.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "VERSION",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/COMPONENT_RIGHTS.md",
+      "category": "CC_BY_DOCUMENTATION_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0; preserve quoted licence terms and existing third-party notices."
+    },
+    {
+      "path": "docs/DATA.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/EVIDENCE_AND_SCOPE.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "experiments/p7c/code/adjudicate.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/arms.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/check_results.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/common.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/construct.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/materialise.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/oracle_run.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/red_team.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "experiments/p7c/code/worker.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "metadata/candidate-metadata.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/change-log.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/claim-command-map.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/demonstration-register.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/kit-portfolio-register.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/quick-start-timing.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/r4-qualification-receipt.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/release-plan.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/requirements-review.observed.txt",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/review-environment.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/review-environment.observed.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/sbom.spdx.json",
+      "category": "PRESERVE_SPDX_METADATA_CC0",
+      "terms_for_corresponding_own_material": "CC0-1.0 for this SPDX metadata document only"
+    },
+    {
+      "path": "metadata/security-identity-scan.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/test-change-register.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "metadata/witness-crosswalk.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P3_CodeProbe_AuditHarnessResults_v1.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_ClaimScopeFreeze_v1.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_ClaimScopeFreeze_v1.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_ClaimVerificationMatrix_v3.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_DecisiveStudyPAP_v1.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_DecisiveStudyPAP_v1.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_DeviationLog_v1.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_EvidenceGraph_v2.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_FormalBoundarySpecification_v2.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_FormalBoundarySpecification_v2.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_IdentitySemantics_v1.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_MeasurementScaleContract_v2.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_NumericPolicy_v1.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_ProtocolClaimMap_v1.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_Protocol_v1.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_Protocol_v1.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_RobustnessRadiusRegister_v2.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "protocol/APEX_P6_CodeProbe_VersionResultMap_v1.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "provenance/COMPLETE_ARCHIVE_CHANGES.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "provenance/COMPLETE_ARCHIVE_MANIFEST.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "provenance/DISTRIBUTION_CHANGES.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "provenance/notices/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "provenance/notices/original_OR2/LICENSE",
+      "category": "PRESERVE_LICENCE_AND_NOTICE",
+      "terms_for_corresponding_own_material": "Preserve original notice and terms"
+    },
+    {
+      "path": "provenance/notices/original_OR2/NOTICE.md",
+      "category": "PRESERVE_LICENCE_AND_NOTICE",
+      "terms_for_corresponding_own_material": "Preserve original notice and terms"
+    },
+    {
+      "path": "provenance/notices/original_OR2/THIRD_PARTY_NOTICES.md",
+      "category": "PRESERVE_LICENCE_AND_NOTICE",
+      "terms_for_corresponding_own_material": "Preserve original notice and terms"
+    },
+    {
+      "path": "qualification/REVISION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/demonstrate_gates.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/formal/Proofs.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/formal/spec_model.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/history/OR2_original_CITATION.cff",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/OR2_original_README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/OR2_original_SHA256SUMS.txt",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7A/CITATION.cff",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7A/PACKAGE_POLICY.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7A/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7A/SHA256SUMS.txt",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7A/VERIFY.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/history/P7A/metadata/ro-crate-metadata.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7A/metadata/sbom.spdx.json",
+      "category": "PRESERVE_SPDX_METADATA_CC0",
+      "terms_for_corresponding_own_material": "CC0-1.0 for this SPDX metadata document only"
+    },
+    {
+      "path": "qualification/history/P7A/qualification/REVISION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7B/CITATION.cff",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7B/PACKAGE_POLICY.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7B/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7B/SHA256SUMS.txt",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7B/metadata/sbom.spdx.json",
+      "category": "PRESERVE_SPDX_METADATA_CC0",
+      "terms_for_corresponding_own_material": "CC0-1.0 for this SPDX metadata document only"
+    },
+    {
+      "path": "qualification/history/P7B/qualification/REVISION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/P7B/ro-crate-metadata.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/p7c/CITATION.cff",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/p7c/PACKAGE_POLICY.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/p7c/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/p7c/SHA256SUMS.txt",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/p7c/metadata/sbom.spdx.json",
+      "category": "PRESERVE_SPDX_METADATA_CC0",
+      "terms_for_corresponding_own_material": "CC0-1.0 for this SPDX metadata document only"
+    },
+    {
+      "path": "qualification/history/p7c/qualification/REVISION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/history/p7c/ro-crate-metadata.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7b/FINAL_TEST_FREEZE.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7b/GATE_COHORT_FREEZE.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7b/MEASUREMENT_SCOPE.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7b/RUN_PLAN_FROZEN.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7b/bootstrap.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7b/cohort52/M001_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M002_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M003_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M004_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M005_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M006_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M007_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M008_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M009_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M010_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M011_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M012_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M013_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M014_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M015_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M016_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M017_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M018_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M019_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M020_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M021_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M022_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M023_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M024_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M025_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M026_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M027_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M028_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M029_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M030_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M031_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M032_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M033_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M034_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M035_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M036_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M037_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M038_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M039_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M040_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M041_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M042_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M043_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M044_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M045_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M046_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M047_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M048_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M049_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M050_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M051_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/cohort52/M052_spec.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 1
+    },
+    {
+      "path": "qualification/p7b/gate_mutants12.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 12
+    },
+    {
+      "path": "qualification/p7b/mapped52.json",
+      "category": "MIXED_RECORD_AND_CODE",
+      "terms_for_corresponding_own_material": {
+        "own_records": "CC-BY-4.0",
+        "own_embedded_code": "MIT"
+      },
+      "explicit_code_fields": 104
+    },
+    {
+      "path": "qualification/p7b/summarise_coverage.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7b/test_contracts.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7b/workload.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/EVIDENCE_LINKS.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7d/GHID_RO.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7d/INPUT_LOCK.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7d/Q07_REMAINING.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/p7d/environment.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/p7d_common.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/pipeline.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/scoped_entry.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/test_integration.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/verify_results.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/p7d/views.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/protocol/ClaimScope_v2.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/protocol/FormalSpec_v3.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/protocol/NumericPolicy_v2.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "qualification/run_p7a.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/run_p7b.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/run_p7c.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/tests/generated_checks.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/tests/redteam.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/tests/resource_probe.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/tests/run_tests.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/tests/test_policy_sensitivity_guard.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "qualification/tests/test_regressions.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "review/claims_suite.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "review/p6_protocol_harness.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "review/parser_independent_oracle.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "review/requirements-review.txt",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "review/run_reproduction.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "review/run_smoke.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/.codeprobeignore.example",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/.gitattributes",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/.github/CODEOWNERS",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/.gitignore",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/00-kit-index.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/CHANGELOG.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/CONTRIBUTING.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/DISTRIBUTION_BOUNDARY.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/LICENSE",
+      "category": "PRESERVE_LICENCE_AND_NOTICE",
+      "terms_for_corresponding_own_material": "Preserve original notice and terms"
+    },
+    {
+      "path": "source/NOTICE.md",
+      "category": "PRESERVE_LICENCE_AND_NOTICE",
+      "terms_for_corresponding_own_material": "Preserve original notice and terms"
+    },
+    {
+      "path": "source/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/REPRODUCIBILITY.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/SECURITY.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/THIRD_PARTY_NOTICES.md",
+      "category": "PRESERVE_LICENCE_AND_NOTICE",
+      "terms_for_corresponding_own_material": "Preserve original notice and terms"
+    },
+    {
+      "path": "source/app/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/app/analysis-worker.js",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/codeprobe-ui.js",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/codeprobe.css",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/index.html",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/project-ui.js",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/project.css",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/project.html",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/pyodide-loader.js",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/pyodide-provenance.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/resource-integrity.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/runtime-config.example.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/runtime-config.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/s05/reader.css",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/s05/reader.js",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/app/vendor/pyodide/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/calibration/01-corpus-manifest-template.csv",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/calibration/01-corpus-manifest-template.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/calibration/01-project-corpus-manifest-template.csv",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/calibration/01-project-corpus-manifest-template.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/calibration/02-calibration-profile-template.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/calibration/03-example-calibration-profile.json",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/calibration/04-validation-summary-template.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/calibration/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/calibration/profiles/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/calibration/reports/.gitkeep",
+      "category": "MIT_FUNCTIONAL_CONFIGURATION",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/docs/00-file-catalogue.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/01-naming-policy.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/02-architecture.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/03-report-schema.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/04-browser-security.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/05-offline-deployment.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/06-calibration-guide.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/07-ui-extension-guide.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/08-release-process.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/09-release-integrity.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/10-provenance.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/11-design-decisions.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/12-release-hash-sheet.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/13-signed-release-workflow.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/14-optimisation-roadmap.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/15-final-release-audit.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/16-ci-and-repository-controls.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/17-supported-coverage.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/18-runtime-integrity.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/19-release-recovery.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/20-worker-resilience.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/21-runtime-lifecycle.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/22-contract-reconciliation.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/23-measurement-scale-identity-and-numeric-policy.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/docs/assets/interface-preview.png",
+      "category": "CC_BY_FIGURE",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/provenance/ACTIVE_NATIVE_FILES_CE04.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/provenance/CE04_COMPLETE_SOURCE_IDENTITY.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/provenance/CE19_OVERLAY.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/provenance/CE20_P01_RELEASE_INTEGRATION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/release/file-rename-map.csv",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/release/final-audit-report.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/release/final-audit-summary.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/release/release-manifest.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/reproducibility/README.md",
+      "category": "CC_BY_DOCUMENTATION",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "source/research/ce04/component-inventory.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/ce04/locator-contract.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/claim-policy.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/construct-map.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/identity-contract.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/measurement-error-register.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/measurement-scale-contract.v2.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/numeric-comparison-policy.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/observation-catalogue.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s03/error-register-extension.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s04/acceptance-lock.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s04/calibration-design.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s04/condition-migration.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s04/profiles.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s05/BRIDGE_PRIVACY_ACCESSIBILITY.md",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/research/s05/acceptance-lock.v1.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/schemas/codeprobe-feedback-journal-v1.schema.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/schemas/codeprobe-measurement-kernel-result-v1.schema.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/schemas/codeprobe-observation-catalogue-v1.schema.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/schemas/codeprobe-review-bundle-v1.schema.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_calibration_admission.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/README.md",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/__init__.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/api.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/diagnostic_outputs.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/metrics.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/paths.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/process_control.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/project_io.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/release.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/server.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_engine/version.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_evidence_gates.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_interpretation.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_measurement_kernel.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_numeric_policy.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_report_cli.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_reporting.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_review_contract.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_runtime.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/src/codeprobe_s01_observation_adapter.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/s05/view_oracle.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_app_runtime_tools_paths.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_browser_security.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_calibration_profiles.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_calibration_workflow.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_contract_repairs.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_coverage_policy.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_dependency_boundary.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_documentation_resources.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_dynamic_ui_review.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_false_positive_controls.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_final_naming_release.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_final_naming_stability.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_final_package_audit.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_final_release_audit.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_github_zip_roots.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_institutional_packaging.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_javascript_parser.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_local_server.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_p6_formal_core_contracts.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_process_control.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_project_mode.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_pyodide_fixture.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_pyodide_provenance.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_reference_integrity.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_release_crash_driver.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_release_integrity.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_release_metadata.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_release_recovery.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_release_reproducibility.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_report_schema.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_runtime_smoke.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tests/test_worker_contract.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/README.md",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/analyze_project.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/audit_institutional_pack.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/build_release.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/calibrate_corpus.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/calibrate_profile.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_browser_accessibility.js",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_browser_functional.js",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_coverage.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_dependency_boundary.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_file_references.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_input_contracts.js",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_naming.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_pyodide_provenance.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_release.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_release_reproducibility.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/check_worker_protocol.js",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/codeprobe_s05.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/compare_releases.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/coverage-policy.json",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/final_audit.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/prepare_pyodide_fixture.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/run_local_server.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "source/tools/validate_release.py",
+      "category": "RETAIN_EXPLICIT_MIT_SCOPE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "tools/run_local_checks.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "tools/verify_distribution.py",
+      "category": "MIT_CODE",
+      "terms_for_corresponding_own_material": "MIT"
+    },
+    {
+      "path": "validation/GITHUB_VIEW_VALIDATION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/RP2_VALIDATION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    },
+    {
+      "path": "validation/RP3_PREPARATION.json",
+      "category": "CC_BY_DATA_AND_METADATA",
+      "terms_for_corresponding_own_material": "CC-BY-4.0"
+    }
+  ],
+  "distribution_view": "github-browsing",
+  "scope": "The paths present in this browsing view. The complete release archive carries its own complete component map."
+}

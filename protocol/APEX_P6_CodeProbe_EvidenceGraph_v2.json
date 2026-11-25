@@ -1,0 +1,2104 @@
+{
+  "schema": "apex-evidence-graph/v2",
+  "project": "CodeProbe",
+  "phase": 6,
+  "base_graphs": [
+    "APEX_P1_CodeProbe_EvidenceGraph_v1.json",
+    "APEX_P2_CodeProbe_EvidenceGraphDelta_v1.json"
+  ],
+  "nodes": [
+    {
+      "id": "C01",
+      "type": "claim",
+      "label": "A numerical result can be reproducible while the displayed source evidence is incomplete, and a record can be rejected by a downstream consumer.",
+      "locator": "CodeProbe_Main_Manuscript.tex:21; codeprobe_body.tex:5",
+      "availability": "PARTIALLY_CHECKABLE",
+      "principal": "yes"
+    },
+    {
+      "id": "C02",
+      "type": "claim",
+      "label": "The research route separates source admission, observation availability, values, source evidence, policy interpretation and consumer admission.",
+      "locator": "codeprobe_body.tex:7, 61, 75–81, 136–144",
+      "availability": "CHECKABLE_CURRENT_SOURCE",
+      "principal": "yes"
+    },
+    {
+      "id": "C03",
+      "type": "claim",
+      "label": "The active catalogue contains 40 specifications: 12 generic-source, 19 Python-module, 4 Python-callable and 5 Markdown observations.",
+      "locator": "codeprobe_body.tex:77",
+      "availability": "CHECKABLE_CURRENT_SOURCE",
+      "principal": "no"
+    },
+    {
+      "id": "C04",
+      "type": "claim",
+      "label": "Four applicability states prevent an observed zero from being conflated with an unavailable or inapplicable value.",
+      "locator": "codeprobe_body.tex:79–81",
+      "availability": "CHECKABLE_CURRENT_SOURCE",
+      "principal": "no"
+    },
+    {
+      "id": "C05",
+      "type": "claim",
+      "label": "Interpretation is vector-only and non-compensatory under three versioned policy profiles.",
+      "locator": "codeprobe_body.tex:87–110",
+      "availability": "CHECKABLE_CURRENT_SOURCE",
+      "principal": "no"
+    },
+    {
+      "id": "C06",
+      "type": "claim",
+      "label": "The callable metric and evidence cover follow explicit bounded AST conventions, and full-source binding does not by itself guarantee complete observation-local evidence.",
+      "locator": "codeprobe_body.tex:126–134",
+      "availability": "PARTIALLY_CHECKABLE",
+      "principal": "no"
+    },
+    {
+      "id": "C07",
+      "type": "claim",
+      "label": "Eight selected metamorphic families passed on a defective baseline, while other checks produced 197 failures across 95 identifiers in a 2,000-identifier programme.",
+      "locator": "CodeProbe_Main_Manuscript.tex:21; codeprobe_body.tex:245–278; Online Resource S03",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C08",
+      "type": "claim",
+      "label": "On 72 aligned inputs, CodeProbe counts agreed with Radon 6.0.1 and Ruff 0.16.7.",
+      "locator": "CodeProbe_Main_Manuscript.tex:21; codeprobe_body.tex:280–323; Online Resource S01/S02",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C09",
+      "type": "claim",
+      "label": "Ordinary counters plus an external wrapper reproduced all 288 tested decision projections.",
+      "locator": "CodeProbe_Main_Manuscript.tex:21; codeprobe_body.tex:364–402, 563",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C10",
+      "type": "claim",
+      "label": "The localisation repair preserved values on 54 fixed inputs and reduced incomplete covers from 99 of 189 to zero.",
+      "locator": "CodeProbe_Main_Manuscript.tex:21; codeprobe_body.tex:414–473",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C11",
+      "type": "claim",
+      "label": "The identifier-format repair retained the original evidence identity while satisfying the consumer contract.",
+      "locator": "CodeProbe_Main_Manuscript.tex:21; codeprobe_body.tex:414–473",
+      "availability": "PARTIALLY_CHECKABLE",
+      "principal": "yes"
+    },
+    {
+      "id": "C12",
+      "type": "claim",
+      "label": "Layout-sensitive physical span can change a policy decision while AST-based observations remain stable.",
+      "locator": "codeprobe_body.tex:325–362",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C13",
+      "type": "claim",
+      "label": "Empty output and self-consistent output are insufficient evidence of successful or complete analysis.",
+      "locator": "codeprobe_body.tex:404–412",
+      "availability": "PARTIALLY_CHECKABLE",
+      "principal": "yes"
+    },
+    {
+      "id": "C14",
+      "type": "claim",
+      "label": "The study does not establish prevalence, human benefit, universal correctness, whole-pipeline correctness or uninterrupted prospective provenance.",
+      "locator": "codeprobe_body.tex:517–545",
+      "availability": "VERIFIED_TEXTUAL",
+      "principal": "no"
+    },
+    {
+      "id": "C15",
+      "type": "claim",
+      "label": "The reconstruction route reads 157 inputs and rebuilds 10 tables containing 96 rows and 570 data cells; 16 derived files and 42 constraints match expectations.",
+      "locator": "codeprobe_body.tex:555",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C16",
+      "type": "claim",
+      "label": "The bounded native route uses 28 unchanged files from a 348-file repair plus one helper and exercises 54 fixtures, 1,422 checks, 189 cover checks and 40 envelopes.",
+      "locator": "codeprobe_body.tex:557",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C17",
+      "type": "claim",
+      "label": "Ten retained inputs under three profiles yield 30 attempts, 24 capsules, 6 typed refusals and 80 boundary checks.",
+      "locator": "codeprobe_body.tex:557",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C18",
+      "type": "claim",
+      "label": "Historical replay of 103 original inputs and four follow-up cases reproduces 1,100/1,101 predicates, 1,357 record comparisons, 288 wrapper decisions and 19 known diagnostic triplets.",
+      "locator": "codeprobe_body.tex:563–565",
+      "availability": "NOT_CHECKABLE_SUPPLIED_PACKAGE",
+      "principal": "yes"
+    },
+    {
+      "id": "C19",
+      "type": "claim",
+      "label": "The public GitHub release is v2.3.0 at commit 0a1262… and tree a23168…, with a complete 194-file tagged source snapshot.",
+      "locator": "codeprobe_body.tex:571; K2 PUBLIC_RELEASE_RESULT.json",
+      "availability": "VERIFIED_SUPPLIED_EVIDENCE",
+      "principal": "yes"
+    },
+    {
+      "id": "C20",
+      "type": "claim",
+      "label": "Zenodo record 22824646 archives the complete tagged source under version DOI 10.5281/zenodo.22824646 and concept DOI 10.5281/zenodo.22824645.",
+      "locator": "codeprobe_body.tex:571; K3 Zenodo_Publication_Result.json",
+      "availability": "VERIFIED_SUPPLIED_EVIDENCE",
+      "principal": "yes"
+    },
+    {
+      "id": "C21",
+      "type": "claim",
+      "label": "Three scientific figures have editable ODG/SVG masters and publication derivatives without constituting an additional experiment.",
+      "locator": "codeprobe_body.tex:573; K4",
+      "availability": "VERIFIED",
+      "principal": "no"
+    },
+    {
+      "id": "C22",
+      "type": "claim",
+      "label": "The finite cases support independent verification gates and local contract repairs, not superiority, a general abstention theory or natural-project/human-outcome generalisation.",
+      "locator": "codeprobe_body.tex:579–581",
+      "availability": "PARTIALLY_CHECKABLE",
+      "principal": "yes"
+    },
+    {
+      "id": "RQ-T1",
+      "type": "research_question",
+      "label": "Where observations and their evidence satisfy the declared source contracts.",
+      "locator": "codeprobe_body.tex:13",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "RQ-T2",
+      "type": "research_question",
+      "label": "Which measurement projections survive selected transformations and where downstream decisions remain sensitive.",
+      "locator": "codeprobe_body.tex:13",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "RQ-T3",
+      "type": "research_question",
+      "label": "What source-based recalculation rejects beyond a deliberately weaker self-consistency check.",
+      "locator": "codeprobe_body.tex:13",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "RQ-T4",
+      "type": "research_question",
+      "label": "Which distinctions in interpretation and evidence survive the specified native-to-reader and individual-observation routes.",
+      "locator": "codeprobe_body.tex:13",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "A01",
+      "type": "assumption",
+      "label": "Retained author-held records and receipts faithfully represent the historical executions.",
+      "locator": "codeprobe_body.tex:541–565",
+      "availability": "not independently testable",
+      "principal": "no"
+    },
+    {
+      "id": "A02",
+      "type": "assumption",
+      "label": "Named source/runtime identities are the bytes actually used in each historical cell.",
+      "locator": "codeprobe_body.tex:150–240, 541–565",
+      "availability": "partly evidenced",
+      "principal": "no"
+    },
+    {
+      "id": "A03",
+      "type": "assumption",
+      "label": "The declared common syntax/projection is sufficient for the comparator claim.",
+      "locator": "codeprobe_body.tex:280–402",
+      "availability": "requires Phase 3",
+      "principal": "no"
+    },
+    {
+      "id": "A04",
+      "type": "assumption",
+      "label": "Shared dependence on CPython AST does not conceal a common-mode defect decisive for the reported comparisons.",
+      "locator": "codeprobe_body.tex:533",
+      "availability": "explicit limitation",
+      "principal": "no"
+    },
+    {
+      "id": "E01",
+      "type": "evidence",
+      "label": "Manuscript and Online Resource tables, figures and narrative.",
+      "locator": "K1",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "E02",
+      "type": "evidence",
+      "label": "Current v2.3.0 public source, schemas, tests and release manifest.",
+      "locator": "K2 complete source",
+      "availability": "present and executable",
+      "principal": "no"
+    },
+    {
+      "id": "E03",
+      "type": "evidence",
+      "label": "GitHub release receipt and provenance records.",
+      "locator": "K2 PUBLIC_RELEASE_RESULT/PROVENANCE",
+      "availability": "present supplied evidence",
+      "principal": "no"
+    },
+    {
+      "id": "E04",
+      "type": "evidence",
+      "label": "Zenodo publication receipt and downloaded source snapshot.",
+      "locator": "K3",
+      "availability": "present supplied evidence",
+      "principal": "no"
+    },
+    {
+      "id": "E05",
+      "type": "evidence",
+      "label": "Scientific figure masters, source records and derivatives.",
+      "locator": "K4",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "E06",
+      "type": "evidence",
+      "label": "Executed local canonical release gate: 811 tests PASS.",
+      "locator": "logs/K2_canonical_read_only_gate.stdout.txt",
+      "availability": "executed",
+      "principal": "no"
+    },
+    {
+      "id": "E07",
+      "type": "evidence",
+      "label": "Executed local LaTeX builds and text-identity comparison.",
+      "locator": "logs/K1_*",
+      "availability": "executed",
+      "principal": "no"
+    },
+    {
+      "id": "E08",
+      "type": "evidence",
+      "label": "Generated-input CLI smoke and malformed-ZIP rejection.",
+      "locator": "logs/K2_generated_input_cli_smoke; K2_invalid_input_rejection",
+      "availability": "executed",
+      "principal": "no"
+    },
+    {
+      "id": "E09",
+      "type": "evidence",
+      "label": "Exact CE09 reconstruction/qualification package.",
+      "locator": "ABS1",
+      "availability": "absent by design",
+      "principal": "no"
+    },
+    {
+      "id": "E10",
+      "type": "evidence",
+      "label": "Exact CE11 historical comparator replay package and third-party runtime bytes.",
+      "locator": "ABS2/ABS3",
+      "availability": "absent by design",
+      "principal": "no"
+    },
+    {
+      "id": "K1",
+      "type": "artefact",
+      "label": "Editorial submission package, manuscript and supplement.",
+      "locator": "CP_1_SUBMISSION_KIT(1).zip",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "K2",
+      "type": "artefact",
+      "label": "GitHub/public software and qualification package.",
+      "locator": "CP_2_GITHUB_KIT(1).zip",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "K3",
+      "type": "artefact",
+      "label": "Zenodo archival/PID package.",
+      "locator": "CP_3_ZENODO_KIT(1).zip",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "K4",
+      "type": "artefact",
+      "label": "Scientific figures package.",
+      "locator": "CP_4_FIGURES_KIT(1).zip",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "K5",
+      "type": "artefact",
+      "label": "Submission operator guide package.",
+      "locator": "CP_5_SUBMISSION_GUIDE_KIT(1).zip",
+      "availability": "present",
+      "principal": "no"
+    },
+    {
+      "id": "ABS1",
+      "type": "artefact",
+      "label": "Exact CE09 reconstruction and native qualification package.",
+      "locator": "announced in manuscript",
+      "availability": "absent",
+      "principal": "no"
+    },
+    {
+      "id": "ABS2",
+      "type": "artefact",
+      "label": "CE11 historical executable replay package.",
+      "locator": "announced in manuscript",
+      "availability": "absent",
+      "principal": "no"
+    },
+    {
+      "id": "ABS3",
+      "type": "artefact",
+      "label": "Third-party runtime distributions for historical replay.",
+      "locator": "announced in manuscript",
+      "availability": "absent",
+      "principal": "no"
+    },
+    {
+      "id": "S01",
+      "type": "appendix_section",
+      "label": "Online Resource S01 common-domain diagnostic triplets.",
+      "locator": "Online Resource lines 1–56",
+      "availability": "present as table only",
+      "principal": "no"
+    },
+    {
+      "id": "S02",
+      "type": "appendix_section",
+      "label": "Online Resource S02 admission outcomes and I/O follow-up.",
+      "locator": "Online Resource lines 58–96",
+      "availability": "present as table only",
+      "principal": "no"
+    },
+    {
+      "id": "S03",
+      "type": "appendix_section",
+      "label": "Online Resource S03 family-specific assertion accounting.",
+      "locator": "Online Resource lines 98–141",
+      "availability": "present as table only",
+      "principal": "no"
+    },
+    {
+      "id": "PA01",
+      "type": "evidence_item",
+      "label": "Goalard et al. 2026 — Open Verification Dashboard",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.4230/LIPIcs.ECOOP.2026.8"
+    },
+    {
+      "id": "PA02",
+      "type": "evidence_item",
+      "label": "OASIS SARIF 2.1.0",
+      "status": "VERIFIED_OFFICIAL_URL",
+      "locator": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/os/sarif-v2.1.0-os.html"
+    },
+    {
+      "id": "PA03",
+      "type": "evidence_item",
+      "label": "W3C PROV-DM",
+      "status": "VERIFIED_OFFICIAL_URL",
+      "locator": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/"
+    },
+    {
+      "id": "PA04",
+      "type": "evidence_item",
+      "label": "Beyer et al. 2016 — Correctness witnesses",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1145/2950290.2950351"
+    },
+    {
+      "id": "PA05",
+      "type": "evidence_item",
+      "label": "Umann et al. 2024 — Intelligible path witnesses",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.14232/actacyb.299805"
+    },
+    {
+      "id": "PA06",
+      "type": "evidence_item",
+      "label": "Umann & Porkoláb 2025 — Better static-analysis bug reports",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1109/ICSE-SEIP66354.2025.00021"
+    },
+    {
+      "id": "PA07",
+      "type": "evidence_item",
+      "label": "Wickert et al. 2024 — Error chains",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1109/SANER60148.2024.00076"
+    },
+    {
+      "id": "PA08",
+      "type": "evidence_item",
+      "label": "Wagner et al. 2012 — Quamoco",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1109/ICSE.2012.6227106"
+    },
+    {
+      "id": "PA09",
+      "type": "evidence_item",
+      "label": "Zhang et al. 2023 — Statfier",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1145/3611643.3616272"
+    },
+    {
+      "id": "PA10",
+      "type": "evidence_item",
+      "label": "Zhang et al. 2024 — AnnaTester",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1145/3643759"
+    },
+    {
+      "id": "PA11",
+      "type": "evidence_item",
+      "label": "Zhang et al. 2024 — SAScope",
+      "status": "VERIFIED_DOI_RESOLVES",
+      "locator": "https://doi.org/10.1145/3650212.3680398"
+    },
+    {
+      "id": "NL01",
+      "type": "claim",
+      "label": "O arhitectură cu contracte distincte pentru admiterea sursei, disponibilitatea observaţiei, valoarea atomică, dovada locală în sursă, decizia de politică şi admiterea de către consumator constituie contribuţia integratoare a articolului.",
+      "tier": "N4",
+      "status": "[INFERRED]"
+    },
+    {
+      "id": "NL02",
+      "type": "claim",
+      "label": "Succesul la o limită — reproducerea unei valori, acordul politicii sau validitatea producătorului — nu autorizează inferenţa de succes la următoarea limită de evidenţă ori consum.",
+      "tier": "N4",
+      "status": "[INFERRED]"
+    },
+    {
+      "id": "NL03",
+      "type": "claim",
+      "label": "Cele patru stări de aplicabilitate evită confundarea valorii zero cu indisponibilitatea, neaplicabilitatea sau refuzul tipizat.",
+      "tier": "N3",
+      "status": "[VERIFIED]"
+    },
+    {
+      "id": "NL04",
+      "type": "claim",
+      "label": "Politica vectorială, necompensatorie şi cu abstention produce decizii versionate pe praguri declarate.",
+      "tier": "N3",
+      "status": "[VERIFIED supplied text; exact historical counts UNVERIFIED]"
+    },
+    {
+      "id": "NL05",
+      "type": "claim",
+      "label": "Acoperirea observaţională locală în sursă este o obligaţie distinctă de repetarea valorii, digestul întregii surse sau simpla localizare a rezultatului.",
+      "tier": "N4",
+      "status": "[PARTIALLY CHECKABLE]; headline repair depends on ABS1/CE09"
+    },
+    {
+      "id": "NL06",
+      "type": "claim",
+      "label": "Un record acceptat de producător poate fi respins de consumator din cauza gramaticii identificatorului, iar un alias hash poate repara transportul fără a înlocui identitatea sursă.",
+      "tier": "N4",
+      "status": "[PARTIALLY CHECKABLE]; historical consumer run depends on ABS1"
+    },
+    {
+      "id": "NL07",
+      "type": "claim",
+      "label": "O suită de oracole complementare poate expune defecte de frontieră chiar când familii metamorfice selectate şi testele de valoare trec.",
+      "tier": "N3",
+      "status": "[VERIFIED concept; empirical counts UNVERIFIED]"
+    },
+    {
+      "id": "NL08",
+      "type": "claim",
+      "label": "Constatările istorice exacte — 197 eşecuri/95 identificatori, acordurile cu Radon/Ruff, cele 288 decizii, 99/189 acoperiri incomplete şi remedierea la zero — sunt observaţii empirice specifice CodeProbe.",
+      "tier": "N1",
+      "status": "[UNVERIFIED]"
+    },
+    {
+      "id": "P6-C01",
+      "type": "claim",
+      "label": "The bounded native route exposes six separately checkable gates: source admission, observation availability, value/codomain conformance, source-evidence adequacy, policy interpretation and consumer admission/source replay.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "Bounded Python/Markdown/text route and declared consumer; no statement about static analysis in general."
+    },
+    {
+      "id": "P6-C02",
+      "type": "claim",
+      "label": "Passing one named gate does not substitute for passing selected other gates: the supplied bounded witnesses refute five specified implications.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "Five specified failed implications only; no statistical independence or all-pairs logical independence."
+    },
+    {
+      "id": "P6-C03",
+      "type": "claim",
+      "label": "The four-state applicability contract distinguishes observed zero from not_applicable, insufficient_evidence and unavailable.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "Records admitted by the candidate measurement-kernel contract."
+    },
+    {
+      "id": "P6-C04",
+      "type": "claim",
+      "label": "For the monotone predicate x>t over an integer threshold interval [L,U], the endpoint outcomes determine the three-state projection: no_rule_trigger, abstain or review_opportunity.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV3",
+      "scope": "Monotone predicate x>t and declared integer domain only."
+    },
+    {
+      "id": "P6-C05",
+      "type": "claim",
+      "label": "Callable decision counts, offset complexity and nesting follow finite AST conventions, and traversal evidence must cover every visited source span in the generated diagnostic domain.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "CPython AST representation and declared finite visitor; not universal CFG complexity."
+    },
+    {
+      "id": "P6-C06",
+      "type": "claim",
+      "label": "The candidate separates stable observation-slot identity from deterministic result-content identity: record_id binds specification plus logical entity, while measurement_digest binds artifact, evidence and observation content.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "record_id is stable only within a declared measurement-result scope and is not globally unique."
+    },
+    {
+      "id": "P6-C07",
+      "type": "claim",
+      "label": "Structural validity and internal digest consistency are insufficient for coordinate adequacy or source replay; later gates may reject a self-consistent record.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "Named generated adversarial records; no prevalence claim."
+    },
+    {
+      "id": "P6-C08",
+      "type": "claim",
+      "label": "The candidate declares decision-point count as ratio, offset McCabe-style C=1+d as ordinal, exact decimal comparison with an inclusive boundary and conservative binary64 boundary diagnosis.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "Prospective local candidate only; no reinterpretation of historical CE09/CE11 outputs."
+    },
+    {
+      "id": "P6-C09",
+      "type": "claim",
+      "label": "The retained evidence establishes bounded existence and contract behaviour, without estimating natural-project prevalence, human benefit, economic effect, universal correctness or independent replication.",
+      "principal": "yes",
+      "status": "PASS_PHASE6",
+      "severity": "SV2",
+      "scope": "Submission framing and interpretation rule."
+    },
+    {
+      "id": "H-C07",
+      "type": "claim",
+      "label": "197 failures across 95 identifiers and related S03 totals",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C08",
+      "type": "claim",
+      "label": "72 aligned-input agreement with Radon 6.0.1 and Ruff 0.16.7",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C09",
+      "type": "claim",
+      "label": "288 historical decision projections",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C10",
+      "type": "claim",
+      "label": "99/189 incomplete covers reduced to zero",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C15",
+      "type": "claim",
+      "label": "157 inputs, ten tables, 96 rows, 570 cells, 16 files and 42 constraints",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C16",
+      "type": "claim",
+      "label": "28 unchanged files, 54 fixtures, 1,422 checks, 189 covers and 40 envelopes",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C17",
+      "type": "claim",
+      "label": "30 attempts, 24 capsules, six refusals and 80 boundary checks",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "H-C18",
+      "type": "claim",
+      "label": "103+4 replay, 1,100/1,101 predicates, 1,357 comparisons and 19 triplets",
+      "principal": "no",
+      "status": "UNVERIFIED_CONTEXT_ONLY",
+      "severity": "SV0",
+      "scope": "May be reported only as historical author-held context, never as reproduced Phase-6 evidence."
+    },
+    {
+      "id": "P6-A01",
+      "type": "artefact",
+      "label": "Claim Scope Freeze v1",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A02",
+      "type": "artefact",
+      "label": "Formal Boundary Specification v2",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A03",
+      "type": "artefact",
+      "label": "Protocol v1",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A04",
+      "type": "artefact",
+      "label": "Measurement Scale Contract v2",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A05",
+      "type": "artefact",
+      "label": "Numeric Policy v1",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A06",
+      "type": "artefact",
+      "label": "Identity Semantics v1",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A07",
+      "type": "artefact",
+      "label": "Decisive Study PAP v1",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A08",
+      "type": "artefact",
+      "label": "Version-to-Result Map v1",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-A09",
+      "type": "artefact",
+      "label": "Local formal-core candidate 1.2.0",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-E01",
+      "type": "evidence_item",
+      "label": "P3 audit harness, 14 tests/10,540 checks",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-E02",
+      "type": "evidence_item",
+      "label": "P6 protocol harness, 12 tests/4,092 checks",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-E03",
+      "type": "evidence_item",
+      "label": "Failing-before and passing-after formal-core tests",
+      "status": "VERIFIED_PHASE6"
+    },
+    {
+      "id": "P6-AS01",
+      "type": "assumption",
+      "label": "CPython AST representation is the declared parser domain",
+      "status": "DECLARED"
+    },
+    {
+      "id": "P6-AS02",
+      "type": "assumption",
+      "label": "CE09/CE11 exact packages remain absent",
+      "status": "DECLARED"
+    },
+    {
+      "id": "P6-AS03",
+      "type": "assumption",
+      "label": "Threshold predicate is monotone x>t over declared integers",
+      "status": "DECLARED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "RQ-T1",
+      "edge_type": "addressed-by",
+      "target": "C01",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T1",
+      "edge_type": "addressed-by",
+      "target": "C02",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T1",
+      "edge_type": "addressed-by",
+      "target": "C06",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T1",
+      "edge_type": "addressed-by",
+      "target": "C10",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T1",
+      "edge_type": "addressed-by",
+      "target": "C11",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T2",
+      "edge_type": "addressed-by",
+      "target": "C07",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T2",
+      "edge_type": "addressed-by",
+      "target": "C09",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T2",
+      "edge_type": "addressed-by",
+      "target": "C12",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T3",
+      "edge_type": "addressed-by",
+      "target": "C01",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T3",
+      "edge_type": "addressed-by",
+      "target": "C10",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T3",
+      "edge_type": "addressed-by",
+      "target": "C13",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T4",
+      "edge_type": "addressed-by",
+      "target": "C02",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T4",
+      "edge_type": "addressed-by",
+      "target": "C11",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "RQ-T4",
+      "edge_type": "addressed-by",
+      "target": "C13",
+      "locator": "Claim Ledger mapping",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "K1",
+      "edge_type": "produces",
+      "target": "E01",
+      "locator": "K1 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K1",
+      "edge_type": "produces",
+      "target": "E07",
+      "locator": "K1 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K2",
+      "edge_type": "produces",
+      "target": "E02",
+      "locator": "K2 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K2",
+      "edge_type": "produces",
+      "target": "E03",
+      "locator": "K2 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K2",
+      "edge_type": "produces",
+      "target": "E06",
+      "locator": "K2 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K2",
+      "edge_type": "produces",
+      "target": "E08",
+      "locator": "K2 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K3",
+      "edge_type": "produces",
+      "target": "E04",
+      "locator": "K3 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "K4",
+      "edge_type": "produces",
+      "target": "E05",
+      "locator": "K4 inventory",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "ABS1",
+      "edge_type": "produces",
+      "target": "E09",
+      "locator": "manuscript availability boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "ABS2",
+      "edge_type": "produces",
+      "target": "E10",
+      "locator": "manuscript availability boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "ABS3",
+      "edge_type": "required-by",
+      "target": "E10",
+      "locator": "manuscript availability boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C02",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C03",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C04",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C05",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C06",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C11",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E02",
+      "edge_type": "supports",
+      "target": "C13",
+      "locator": "public source/tests",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C02",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C03",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C04",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C05",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C06",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C11",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E06",
+      "edge_type": "demonstrates",
+      "target": "C13",
+      "locator": "local canonical gate",
+      "confidence": "medium",
+      "note": "Demonstrates software behaviour/test suite, not historical experiments."
+    },
+    {
+      "source": "E08",
+      "edge_type": "demonstrates",
+      "target": "C13",
+      "locator": "generated and invalid input smoke",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E03",
+      "edge_type": "supports",
+      "target": "C19",
+      "locator": "GitHub release receipt",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E04",
+      "edge_type": "supports",
+      "target": "C19",
+      "locator": "Zenodo receipt and archive",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E04",
+      "edge_type": "supports",
+      "target": "C20",
+      "locator": "Zenodo receipt and archive",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E05",
+      "edge_type": "supports",
+      "target": "C21",
+      "locator": "figure source records and byte identity",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C01",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C07",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C08",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C09",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C10",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C11",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C12",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C14",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C15",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C16",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C17",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C18",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E01",
+      "edge_type": "supports",
+      "target": "C22",
+      "locator": "manuscript/supplement locator",
+      "confidence": "medium",
+      "note": "Publication-facing assertion or table; not independent execution evidence."
+    },
+    {
+      "source": "E09",
+      "edge_type": "supports",
+      "target": "C07",
+      "locator": "author-held CE09 package",
+      "confidence": "unknown",
+      "note": "Package absent from supplied materials."
+    },
+    {
+      "source": "E09",
+      "edge_type": "supports",
+      "target": "C10",
+      "locator": "author-held CE09 package",
+      "confidence": "unknown",
+      "note": "Package absent from supplied materials."
+    },
+    {
+      "source": "E09",
+      "edge_type": "supports",
+      "target": "C12",
+      "locator": "author-held CE09 package",
+      "confidence": "unknown",
+      "note": "Package absent from supplied materials."
+    },
+    {
+      "source": "E09",
+      "edge_type": "supports",
+      "target": "C15",
+      "locator": "author-held CE09 package",
+      "confidence": "unknown",
+      "note": "Package absent from supplied materials."
+    },
+    {
+      "source": "E09",
+      "edge_type": "supports",
+      "target": "C16",
+      "locator": "author-held CE09 package",
+      "confidence": "unknown",
+      "note": "Package absent from supplied materials."
+    },
+    {
+      "source": "E09",
+      "edge_type": "supports",
+      "target": "C17",
+      "locator": "author-held CE09 package",
+      "confidence": "unknown",
+      "note": "Package absent from supplied materials."
+    },
+    {
+      "source": "E10",
+      "edge_type": "supports",
+      "target": "C08",
+      "locator": "author-held CE11 replay",
+      "confidence": "unknown",
+      "note": "Package/runtime absent from supplied materials."
+    },
+    {
+      "source": "E10",
+      "edge_type": "supports",
+      "target": "C09",
+      "locator": "author-held CE11 replay",
+      "confidence": "unknown",
+      "note": "Package/runtime absent from supplied materials."
+    },
+    {
+      "source": "E10",
+      "edge_type": "supports",
+      "target": "C18",
+      "locator": "author-held CE11 replay",
+      "confidence": "unknown",
+      "note": "Package/runtime absent from supplied materials."
+    },
+    {
+      "source": "S03",
+      "edge_type": "supports",
+      "target": "C07",
+      "locator": "Online Resource S03",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "S01",
+      "edge_type": "supports",
+      "target": "C08",
+      "locator": "Online Resource S01",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "S02",
+      "edge_type": "supports",
+      "target": "C08",
+      "locator": "Online Resource S02",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "C07",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C07",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C08",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C08",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C09",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C09",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C10",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C10",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C12",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C12",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C15",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C15",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C16",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C16",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C17",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C17",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C18",
+      "edge_type": "assumes",
+      "target": "A01",
+      "locator": "provenance boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C18",
+      "edge_type": "assumes",
+      "target": "A02",
+      "locator": "source identity boundary",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C08",
+      "edge_type": "assumes",
+      "target": "A03",
+      "locator": "comparator scope",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C09",
+      "edge_type": "assumes",
+      "target": "A03",
+      "locator": "comparator scope",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C08",
+      "edge_type": "assumes",
+      "target": "A04",
+      "locator": "common CPython front end",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "C10",
+      "edge_type": "assumes",
+      "target": "A04",
+      "locator": "common CPython front end",
+      "confidence": "medium",
+      "note": ""
+    },
+    {
+      "source": "C09",
+      "edge_type": "qualifies",
+      "target": "C22",
+      "locator": "compatibility does not establish uniqueness",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C14",
+      "edge_type": "qualifies",
+      "target": "C07",
+      "locator": "limits generalisation from finite conformance programme",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C14",
+      "edge_type": "qualifies",
+      "target": "C08",
+      "locator": "limits comparator scope",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "C14",
+      "edge_type": "qualifies",
+      "target": "C18",
+      "locator": "local repeatability is not independent replication",
+      "confidence": "high",
+      "note": ""
+    },
+    {
+      "source": "NL01",
+      "edge_type": "contradicts",
+      "target": "PA01",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "PA01 contradicts broad novelty/priority for transparent obligation separation."
+    },
+    {
+      "source": "NL01",
+      "edge_type": "cites",
+      "target": "PA02",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "SARIF supplies established states and locations."
+    },
+    {
+      "source": "NL01",
+      "edge_type": "cites",
+      "target": "PA03",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "PROV supplies established provenance structures."
+    },
+    {
+      "source": "NL02",
+      "edge_type": "contradicts",
+      "target": "PA01",
+      "locator": "NearestNeighbours v1",
+      "confidence": "MODERATE-HIGH",
+      "meaning": "OVD anticipates non-substitution between no warning and verified obligation."
+    },
+    {
+      "source": "NL03",
+      "edge_type": "contradicts",
+      "target": "PA02",
+      "locator": "SARIF result.kind",
+      "confidence": "HIGH",
+      "meaning": "Standard already distinguishes applicability/evaluation states."
+    },
+    {
+      "source": "NL05",
+      "edge_type": "cites",
+      "target": "PA04",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Witnesses are established exchangeable evidence."
+    },
+    {
+      "source": "NL05",
+      "edge_type": "cites",
+      "target": "PA05",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Path witnesses anticipate intelligible source evidence."
+    },
+    {
+      "source": "NL05",
+      "edge_type": "cites",
+      "target": "PA06",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Report quality and location are established concerns."
+    },
+    {
+      "source": "NL05",
+      "edge_type": "cites",
+      "target": "PA07",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Error chains separate manifestation and fix locations."
+    },
+    {
+      "source": "NL07",
+      "edge_type": "contradicts",
+      "target": "PA09",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Metamorphic static-analyser testing is not novel."
+    },
+    {
+      "source": "NL07",
+      "edge_type": "contradicts",
+      "target": "PA10",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Annotation-induced analyser faults and derived metamorphic tests are prior art."
+    },
+    {
+      "source": "NL07",
+      "edge_type": "contradicts",
+      "target": "PA11",
+      "locator": "NearestNeighbours v1",
+      "confidence": "HIGH",
+      "meaning": "Combined metamorphic/differential testing of representation faults is prior art."
+    },
+    {
+      "source": "P6-C01",
+      "edge_type": "derives-from",
+      "target": "C02",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C02",
+      "edge_type": "derives-from",
+      "target": "C01",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C02",
+      "edge_type": "derives-from",
+      "target": "C22",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C03",
+      "edge_type": "derives-from",
+      "target": "C04",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C04",
+      "edge_type": "derives-from",
+      "target": "C05",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C05",
+      "edge_type": "derives-from",
+      "target": "C06",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C05",
+      "edge_type": "derives-from",
+      "target": "C12",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C06",
+      "edge_type": "derives-from",
+      "target": "C11",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C07",
+      "edge_type": "derives-from",
+      "target": "C13",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C09",
+      "edge_type": "derives-from",
+      "target": "C14",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C07",
+      "edge_type": "derives-from",
+      "target": "C07",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C08",
+      "edge_type": "derives-from",
+      "target": "C08",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C09",
+      "edge_type": "derives-from",
+      "target": "C09",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C10",
+      "edge_type": "derives-from",
+      "target": "C10",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C15",
+      "edge_type": "derives-from",
+      "target": "C15",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C16",
+      "edge_type": "derives-from",
+      "target": "C16",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C17",
+      "edge_type": "derives-from",
+      "target": "C17",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C18",
+      "edge_type": "derives-from",
+      "target": "C18",
+      "locator": "Claim Scope Freeze v1",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A02",
+      "edge_type": "supports",
+      "target": "P6-C01",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A03",
+      "edge_type": "supports",
+      "target": "P6-C01",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "supports",
+      "target": "P6-C01",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "supports",
+      "target": "P6-C01",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A02",
+      "edge_type": "supports",
+      "target": "P6-C02",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "supports",
+      "target": "P6-C02",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "supports",
+      "target": "P6-C02",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A09",
+      "edge_type": "supports",
+      "target": "P6-C03",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "supports",
+      "target": "P6-C03",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E03",
+      "edge_type": "supports",
+      "target": "P6-C03",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A02",
+      "edge_type": "supports",
+      "target": "P6-C04",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "supports",
+      "target": "P6-C04",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "supports",
+      "target": "P6-C04",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "supports",
+      "target": "P6-C05",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A02",
+      "edge_type": "supports",
+      "target": "P6-C05",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A06",
+      "edge_type": "supports",
+      "target": "P6-C06",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A09",
+      "edge_type": "supports",
+      "target": "P6-C06",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E03",
+      "edge_type": "supports",
+      "target": "P6-C06",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "supports",
+      "target": "P6-C07",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A02",
+      "edge_type": "supports",
+      "target": "P6-C07",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A04",
+      "edge_type": "supports",
+      "target": "P6-C08",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A05",
+      "edge_type": "supports",
+      "target": "P6-C08",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A09",
+      "edge_type": "supports",
+      "target": "P6-C08",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E03",
+      "edge_type": "supports",
+      "target": "P6-C08",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A01",
+      "edge_type": "supports",
+      "target": "P6-C09",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A03",
+      "edge_type": "supports",
+      "target": "P6-C09",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-A08",
+      "edge_type": "supports",
+      "target": "P6-C09",
+      "locator": "Phase-6 formal core",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "demonstrates",
+      "target": "P6-C01",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "demonstrates",
+      "target": "P6-C02",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "demonstrates",
+      "target": "P6-C03",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "demonstrates",
+      "target": "P6-C04",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "demonstrates",
+      "target": "P6-C05",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "demonstrates",
+      "target": "P6-C06",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E01",
+      "edge_type": "demonstrates",
+      "target": "P6-C07",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-E02",
+      "edge_type": "demonstrates",
+      "target": "P6-C08",
+      "locator": "Protocol/Audit harness results",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C05",
+      "edge_type": "assumes",
+      "target": "P6-AS01",
+      "locator": "formal scope",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C07",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C08",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C09",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C10",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C15",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C16",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C17",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "H-C18",
+      "edge_type": "assumes",
+      "target": "P6-AS02",
+      "locator": "Version-to-Result Map",
+      "confidence": "high"
+    },
+    {
+      "source": "P6-C04",
+      "edge_type": "assumes",
+      "target": "P6-AS03",
+      "locator": "FormalBoundarySpecification v2 §4",
+      "confidence": "high"
+    }
+  ],
+  "diagnostics": {
+    "node_count": 102,
+    "edge_count": 170,
+    "phase6_principal_claims": 9,
+    "phase6_principal_supported": 9,
+    "unsupported_phase6_principal": [],
+    "support_cycle_sccs": [],
+    "historical_context_claims": 8,
+    "interpretation": "No retained Phase-6 principal claim is unsupported in the formal graph. Rule-24 kit demonstrations and manifest-bound executable obligations remain Phase-7 work."
+  }
+}

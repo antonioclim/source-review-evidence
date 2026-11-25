@@ -1,0 +1,29 @@
+{
+  "schema": "source-review-evidence-licence-scope/1",
+  "project": "Source Review Evidence",
+  "version": "1.0.0",
+  "own_code_licence": "MIT",
+  "own_documentation_figures_and_records_licence": "CC-BY-4.0",
+  "rights_holder_for_new_own_material": "Antonio Clim",
+  "existing_source_copyright_notice": "Copyright (c) 2026 CodeProbe contributors",
+  "preserved_metadata_exception": "CC0-1.0 for the SPDX documents that declare it",
+  "scope_map": "LICENSING_MAP.json",
+  "source_licence": "source/LICENSE",
+  "rules": [
+    "The map allocates terms to the corresponding author-controlled component or portion. Third-party material retains its own terms.",
+    "Existing MIT grants and their copyright/permission notices remain effective, including associated documentation already covered by MIT.",
+    "Code does not become CC BY merely because it appears inside a record, log or document. Author-controlled code is MIT; third-party code retains its original terms.",
+    "SPDX dataLicense applies to the SPDX metadata only. It does not license the described packages or research collection.",
+    "No exclusive copyright is asserted in bare facts. CC BY applies to author-controlled copyright and similar rights, including any applicable collection/database rights.",
+    "Current byte identities are recorded in DISTRIBUTION_MANIFEST.json. This allocation map deliberately does not duplicate those hashes."
+  ],
+  "excluded_from_new_grant": [
+    "third-party material",
+    "manuscript",
+    "OR1",
+    "original OR2 archive",
+    "publisher materials",
+    "external runtime implementations",
+    "external comparator implementations"
+  ]
+}

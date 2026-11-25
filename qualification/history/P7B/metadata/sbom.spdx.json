@@ -1,0 +1,128 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "dataLicense": "CC0-1.0",
+  "name": "CodeProbe-P7B-review-SBOM",
+  "documentNamespace": "urn:uuid:c6b9d7bb-50ad-5906-b3a4-94502c5da1a9",
+  "creationInfo": {
+    "created": "2026-09-20T21:41:27Z",
+    "creators": [
+      "Tool: CodeProbe-APEX-P7B-local-metadata"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-CodeProbe",
+      "name": "CodeProbe",
+      "versionInfo": "P7-R4-review-candidate+a2p7b.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-attrs",
+      "name": "attrs",
+      "versionInfo": "26.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "comment": "Installed metadata and file identities in review-environment.observed.json; distribution wheel bytes not available."
+    },
+    {
+      "SPDXID": "SPDXRef-jsonschema",
+      "name": "jsonschema",
+      "versionInfo": "4.26.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "comment": "Installed metadata and file identities in review-environment.observed.json; distribution wheel bytes not available."
+    },
+    {
+      "SPDXID": "SPDXRef-jsonschema-specifications",
+      "name": "jsonschema-specifications",
+      "versionInfo": "2025.9.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "comment": "Installed metadata and file identities in review-environment.observed.json; distribution wheel bytes not available."
+    },
+    {
+      "SPDXID": "SPDXRef-referencing",
+      "name": "referencing",
+      "versionInfo": "0.37.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "comment": "Installed metadata and file identities in review-environment.observed.json; distribution wheel bytes not available."
+    },
+    {
+      "SPDXID": "SPDXRef-rpds-py",
+      "name": "rpds-py",
+      "versionInfo": "2026.5.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "comment": "Installed metadata and file identities in review-environment.observed.json; distribution wheel bytes not available."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-CodeProbe"
+    },
+    {
+      "spdxElementId": "SPDXRef-CodeProbe",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jsonschema"
+    },
+    {
+      "spdxElementId": "SPDXRef-jsonschema",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-attrs"
+    },
+    {
+      "spdxElementId": "SPDXRef-jsonschema",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jsonschema-specifications"
+    },
+    {
+      "spdxElementId": "SPDXRef-jsonschema",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-referencing"
+    },
+    {
+      "spdxElementId": "SPDXRef-jsonschema",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-rpds-py"
+    },
+    {
+      "spdxElementId": "SPDXRef-referencing",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-attrs"
+    },
+    {
+      "spdxElementId": "SPDXRef-referencing",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-rpds-py"
+    },
+    {
+      "spdxElementId": "SPDXRef-jsonschema-specifications",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-referencing"
+    }
+  ],
+  "documentComment": "Installed Python review closure for jsonschema without extras; observed current runtime only. Not a portable wheel lock, clean installation, OS SBOM or vulnerability assessment."
+}

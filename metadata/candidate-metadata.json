@@ -1,0 +1,44 @@
+{
+  "candidate_source_relation": "P6 formal-core source plus R4 review-harness and metadata repairs; no public release created",
+  "claims": [
+    "P6-C01",
+    "P6-C02",
+    "P6-C03",
+    "P6-C04",
+    "P6-C05",
+    "P6-C06",
+    "P6-C07",
+    "P6-C08",
+    "P6-C09"
+  ],
+  "date": "2026-09-19",
+  "full_reproduction_seconds": 164.687808,
+  "historical_context": [
+    "H-C07",
+    "H-C08",
+    "H-C09",
+    "H-C10",
+    "H-C15",
+    "H-C16",
+    "H-C17",
+    "H-C18"
+  ],
+  "kit_id": "K-P7-R4-CORE",
+  "network_policy": {
+    "external_network_intentional_use": false,
+    "external_network_required": false,
+    "loopback_used_by_source_tests": true,
+    "statement": "No external network access is required or intentionally used. The source test suite intentionally exercises loopback-only HTTP and process fixtures; syscall-level telemetry was not collected.",
+    "telemetry": "not_syscall_instrumented"
+  },
+  "package_revision": "R4",
+  "public_release_identity": "v2.3.0 unchanged under source/",
+  "reference_mismatches": 0,
+  "remote_writes": false,
+  "root_citation_identity": "P7-R4-review-candidate",
+  "schema": "codeprobe-p7-r4-review-candidate/v2",
+  "smoke_seconds": 6.76606,
+  "status": "local_unreleased_review_candidate",
+  "article_title": "CodeProbe: Evidence Gates Can Fail Separately in Heuristic Source Review",
+  "title_lock": "v3.1"
+}

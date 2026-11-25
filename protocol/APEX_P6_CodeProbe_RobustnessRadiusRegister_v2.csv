@@ -1,0 +1,10 @@
+claim_id,perturbation,radius,unit,overturning_event,status
+P6-C01,gate-definition clause,1 violated clause,discrete contract clause,one declared route state cannot be classified without omission/overlap,REPORTED
+P6-C02,witness validity,1 invalidated witness per asserted implication,witness,predecessor fails or target passes for the named witness,REPORTED
+P6-C03,state/value invariant,1 invalid record,record,observed/null or non-observed/non-null admitted,REPORTED
+P6-C04,integer value x,"min(|x-L|, |x-U|) to the nearest decision boundary, interpreted by region",integer threshold unit,crossing L or U changes region; one counterexample refutes the universal identity,REPORTED
+P6-C05,coordinate coverage or oracle output,1 uncovered visited span or 1 count disagreement,span/count,generated admitted callable violates cover or count agreement,REPORTED
+P6-C06,identity metamorphism,1 violated metamorphic relation,paired result,evidence-only change alters record_id or content change preserves digest,REPORTED
+P6-C07,adversarial record,1 falsely accepted record,record,narrowed locator or rehashed mutation passes the target gate,REPORTED
+P6-C08,numeric difference,tolerance − delta (signed); binary interval overlap yields indeterminate,quantity unit,signed radius becomes negative or indeterminate is promoted to pass,REPORTED
+P6-C09,scope statement,1 unsupported inference,claim,"principal conclusion invokes prevalence, causal/human/economic effect or universal correctness",REPORTED

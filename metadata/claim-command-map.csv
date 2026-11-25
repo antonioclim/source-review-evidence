@@ -1,0 +1,10 @@
+claim_id,kit_id,command,result_locator,test_locator,severity,scope
+P6-C01,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C01,review/claims_suite.py,SV2,Bounded Python/Markdown/text route and declared consumer; no statement about static analysis in general.
+P6-C02,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C02,review/claims_suite.py,SV2,Five specified failed implications only; no statistical independence or all-pairs logical independence.
+P6-C03,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C03,review/claims_suite.py,SV2,Records admitted by the candidate measurement-kernel contract.
+P6-C04,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C04,review/claims_suite.py,SV3,Monotone predicate x>t and declared integer domain only.
+P6-C05,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C05,review/claims_suite.py,SV2,CPython AST representation and declared finite visitor; not universal CFG complexity.
+P6-C06,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C06,review/claims_suite.py,SV2,record_id is stable only within a declared measurement-result scope and is not globally unique.
+P6-C07,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C07,review/claims_suite.py,SV2,Named generated adversarial records; no prevalence claim.
+P6-C08,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C08,review/claims_suite.py,SV2,Prospective local candidate only; no reinterpretation of historical CE09/CE11 outputs.
+P6-C09,K-P7-R4-CORE,python -I -S -B review/run_reproduction.py --output <dir>,results/claims-as-tests-results.json#P6-C09,review/claims_suite.py,SV2,Submission framing and interpretation rule.

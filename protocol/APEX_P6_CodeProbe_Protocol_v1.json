@@ -1,0 +1,190 @@
+{
+  "schema": "apex-codeprobe-protocol/v1",
+  "version": "1.0.0",
+  "date": "2026-09-19",
+  "status": "reconstructed_retrospective_protocol_with_prospective_candidate_repairs",
+  "article_type": "bounded implementation case study",
+  "purpose": "Test finite, falsifiable obligations at six boundaries of a source-review route; do not estimate prevalence, causal benefit, authorship or economic effect.",
+  "claim_scope_strategy": "BOUNDED_CURRENT_EVIDENCE",
+  "retained_claim_ids": [
+    "P6-C01",
+    "P6-C02",
+    "P6-C03",
+    "P6-C04",
+    "P6-C05",
+    "P6-C06",
+    "P6-C07",
+    "P6-C08",
+    "P6-C09"
+  ],
+  "aims": [
+    "Define the six gates and their typed failure states.",
+    "Verify selected non-substitution witnesses.",
+    "Fix scale, numerical and identity semantics prospectively.",
+    "Provide reviewer-rerunnable obligations for Phase 7.",
+    "Specify a future Decisive Study before its data exist."
+  ],
+  "units": [
+    "source artifact",
+    "logical callable entity",
+    "observation slot",
+    "source-evidence span",
+    "policy profile",
+    "consumer envelope",
+    "future project × scenario"
+  ],
+  "gates": [
+    {
+      "id": "G1",
+      "name": "source admission",
+      "input": "finite source bytes, declared language, logical path and finite resource budget",
+      "pass": "an IntakeRecord binds raw and normalised hashes, UTF-8 text and physical lines",
+      "fail": "typed refusal; no substitute bytes or silent decoding repair",
+      "invariants": [
+        "invalid UTF-8 is refused",
+        "file identity checked before and after read"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "observation availability",
+      "input": "G1-admitted source plus required parser/entity/denominator",
+      "pass": "one of observed, not_applicable, insufficient_evidence or unavailable; observed iff value is non-null",
+      "fail": "state/value mismatch or missing typed reason",
+      "invariants": [
+        "zero remains observed",
+        "non-observed values are null"
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "value and codomain conformance",
+      "input": "an observation under a versioned specification",
+      "pass": "atomic finite value, unit, codomain and measurement scale match the specification",
+      "fail": "domain, bound, unit or scale violation",
+      "invariants": [
+        "McCabe-style C is ordinal in specification 1.2.0",
+        "decision-point count remains ratio"
+      ]
+    },
+    {
+      "id": "G4",
+      "name": "source-evidence adequacy",
+      "input": "evidence identifiers bound to normalised source and coordinates",
+      "pass": "structural evidence admission and, where required, coordinate coverage of all visited spans",
+      "fail": "unknown evidence, wrong scope or uncovered visited span",
+      "invariants": [
+        "structural validity is not treated as coordinate completeness"
+      ]
+    },
+    {
+      "id": "G5",
+      "name": "policy interpretation",
+      "input": "observed value, accepted profile identity and applicable rule",
+      "pass": "versioned non-compensatory decision vector with declared threshold set",
+      "fail": "profile mismatch, undeclared threshold or non-applicable rule treated as a decision",
+      "invariants": [
+        "lower <= nominal <= upper",
+        "endpoint reduction applies only to monotone x>t"
+      ]
+    },
+    {
+      "id": "G6",
+      "name": "consumer admission and source replay",
+      "input": "producer record, consumer schema/identifier grammar and declared source/profile/build for replay",
+      "pass": "accepted envelope or replay agreement; aliases preserve original source identity",
+      "fail": "typed rejection, replay mismatch or identity loss",
+      "invariants": [
+        "digest consistency is not authentication",
+        "record_id is not content identity"
+      ]
+    }
+  ],
+  "estimands": [
+    {
+      "id": "E-P6-01",
+      "name": "gate outcome vector",
+      "unit": "case × gate",
+      "definition": "ordered vector of PASS/typed FAIL states for G1–G6",
+      "estimator": "exact finite tabulation",
+      "decision_rule": "each retained witness must show its declared predecessor PASS and target FAIL",
+      "population_claim": "none"
+    },
+    {
+      "id": "E-P6-02",
+      "name": "threshold projection agreement",
+      "unit": "integer tuple (L,U,nominal,x)",
+      "definition": "equality of full-interval and stored-level three-state projection",
+      "estimator": "exact proportion over enumerated audit grid",
+      "decision_rule": "3,948/3,948 required; one mismatch fails FO-03/FO-04",
+      "population_claim": "general proposition supported additionally by proof"
+    },
+    {
+      "id": "E-P6-03",
+      "name": "callable oracle agreement",
+      "unit": "generated callable",
+      "definition": "exact equality of decision count, C=1+d and nesting plus coordinate coverage",
+      "estimator": "exact finite agreement count from P3 generated domain",
+      "decision_rule": "all generated admitted cases must agree",
+      "population_claim": "none beyond generated domain and proof obligations"
+    },
+    {
+      "id": "E-P6-04",
+      "name": "identity metamorphic agreement",
+      "unit": "paired measurement results",
+      "definition": "record_id invariance and measurement_digest change under content-only mutation",
+      "estimator": "exact Boolean conjunction",
+      "decision_rule": "all anti-conflation assertions pass",
+      "population_claim": "none"
+    },
+    {
+      "id": "E-P6-05",
+      "name": "numeric comparison status",
+      "unit": "numeric pair and tolerance pair",
+      "definition": "within/outside/indeterminate under declared representation",
+      "estimator": "deterministic exact rule",
+      "decision_rule": "decimal equality is inclusive; indeterminate binary64 is not PASS",
+      "population_claim": "none"
+    },
+    {
+      "id": "E-DS-01",
+      "name": "incremental adjudicated defect detection",
+      "unit": "project × scenario",
+      "definition": "share of adjudicated boundary defects detected by six-gate B2 and missed by strongest comparator B1",
+      "estimator": "paired project-clustered estimate in future Decisive Study",
+      "decision_rule": "pilot continuation requires at least four unique adjudicated detections",
+      "population_claim": "future study only"
+    }
+  ],
+  "design": {
+    "current": "finite retrospective diagnostic and conformance case",
+    "future": "staged paired comparative Decisive Study",
+    "sampling_current": "purposive generated and curated cases; no probability sample",
+    "randomisation_current": "not applicable",
+    "blinding_current": "none; acknowledged implementation-informed selection"
+  },
+  "decision_rules": [
+    "Every required formal obligation is conjunctive: one counterexample fails it.",
+    "Every retained executable claim must reach SV2 before final submission.",
+    "Historical CE09/CE11 quantities cannot support a principal claim without exact restoration.",
+    "No p-value or population interval is computed from assertions, transformations or profiles.",
+    "Indeterminate numerical boundaries are not passes."
+  ],
+  "multiplicity": "No null-hypothesis family is tested in the current finite conformance protocol. All named obligations are reported and none is selected after outcome. The future study has one primary estimand and predeclared secondary estimands.",
+  "stopping_current": "Run the fixed enumerated obligations to completion; no early stopping after favourable results.",
+  "abandonment_current": "A failed scale, identity, source-cover or threshold obligation requires repair or claim reduction; no expected output, threshold, seed or baseline may be changed to obtain a pass.",
+  "robustness_plan": "APEX_P6_CodeProbe_RobustnessAndMultiversePlan_v1.md",
+  "threats_register": "APEX_P6_CodeProbe_ThreatsToValidity_v1.csv",
+  "deviation_log": "APEX_P6_CodeProbe_DeviationLog_v1.csv",
+  "reproduction": {
+    "candidate_root": "local Phase-6 candidate, separately archived",
+    "commands": [
+      "python APEX_P6_CodeProbe_FormalCoreTests_v1.py --root <candidate>",
+      "python APEX_P6_CodeProbe_ProtocolHarness_v1.py --root <candidate> ..."
+    ],
+    "network_required": false,
+    "historical_ce09_ce11_required": false
+  },
+  "ethics": "No human participants, personal data or intervention are used in Phase 6. The future study requires an ethics determination before recruiting adjudicators as research participants.",
+  "decisive_study": "APEX_P6_CodeProbe_DecisiveStudyPAP_v1.json"
+}

@@ -1,0 +1,22 @@
+{
+  "full_budget_seconds": 1800,
+  "full_reproduction_seconds": 164.687808,
+  "implementation": "CPython",
+  "jsonschema": "4.26.0",
+  "locale": "C.UTF-8",
+  "network_policy": {
+    "external_network_intentional_use": false,
+    "external_network_required": false,
+    "loopback_used_by_source_tests": true,
+    "statement": "No external network access is required or intentionally used. The source test suite intentionally exercises loopback-only HTTP and process fixtures; syscall-level telemetry was not collected.",
+    "telemetry": "not_syscall_instrumented"
+  },
+  "package_revision": "R4",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "qualification": "clean copied tree; six deterministic outputs regenerated; zero SHA-256 reference mismatches",
+  "schema": "codeprobe-p7-r4-review-environment/v2",
+  "smoke_budget_seconds": 300,
+  "smoke_seconds": 6.76606,
+  "timezone": "UTC"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_revision": "R4",
+  "environment": "metadata/review-environment.json",
+  "full_budget_seconds": 1800,
+  "full_reproduction_seconds": 164.687808,
+  "full_within_budget": true,
+  "network_policy": {
+    "external_network_intentional_use": false,
+    "external_network_required": false,
+    "loopback_used_by_source_tests": true,
+    "statement": "No external network access is required or intentionally used. The source test suite intentionally exercises loopback-only HTTP and process fixtures; syscall-level telemetry was not collected.",
+    "telemetry": "not_syscall_instrumented"
+  },
+  "reference_mismatches": 0,
+  "reference_verification_status": "PASS",
+  "schema": "codeprobe-p7-r4-quick-start-timing/v2",
+  "smoke_budget_seconds": 300,
+  "smoke_seconds": 6.76606,
+  "smoke_within_budget": true,
+  "status": "PASS"
+}

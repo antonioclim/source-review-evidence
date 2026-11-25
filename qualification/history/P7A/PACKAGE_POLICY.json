@@ -1,0 +1,8 @@
+{
+  "candidate_status": "local_unreleased_review_candidate",
+  "inner_zips": {},
+  "layout": "recursive",
+  "package": "CODEPROBE_P7_R4_REVIEW_CANDIDATE_v2",
+  "schema": "codeprobe-package-policy/v1",
+  "documentary_revision": "LP02/v3.2"
+}

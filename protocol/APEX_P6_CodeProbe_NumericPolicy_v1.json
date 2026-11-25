@@ -1,0 +1,25 @@
+{
+  "binary64_diagnostic": {
+    "admission_rule": "indeterminate_boundary is not a pass",
+    "method": "half-ULP intervals around each operand",
+    "states": [
+      "within_tolerance",
+      "outside_tolerance",
+      "indeterminate_boundary"
+    ]
+  },
+  "canonical_representation": "decimal lexical strings parsed as finite Decimal values",
+  "comparison": "abs(a-b) <= max(absolute_tolerance, relative_tolerance * max(abs(a),abs(b)))",
+  "equality_boundary": "inclusive",
+  "evaluation_order": [
+    "parse decimal lexical inputs",
+    "compute absolute difference",
+    "compute magnitude",
+    "compute absolute and relative tolerances",
+    "take maximum tolerance",
+    "apply inclusive comparison"
+  ],
+  "historical_scope": "does not reinterpret CE09 or CE11 outputs",
+  "policy_id": "codeprobe-numeric-comparison/1.0.0",
+  "status": "prospective_local_candidate"
+}

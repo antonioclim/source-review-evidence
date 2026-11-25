@@ -1,0 +1,29 @@
+{
+  "contract_id": "codeprobe-measurement-scale-contract/2.0.0",
+  "effective_scope": "prospective candidate outputs only",
+  "migration": {
+    "from_specification": "codeprobe-observation/python.callable.mccabe_complexity/1.1.1",
+    "historical_outputs": "remain labelled under their original contract and are not silently rewritten",
+    "numeric_value_change": false,
+    "semantic_change": "measurement_scale ratio -> ordinal",
+    "to_specification": "codeprobe-observation/python.callable.mccabe_complexity/1.2.0"
+  },
+  "rules": [
+    {
+      "justification": "non-negative count with non-arbitrary zero",
+      "observation_id": "python.callable.decision_point_count",
+      "scale": "ratio"
+    },
+    {
+      "definition": "C=1+d",
+      "inadmissible_inferences": [
+        "twice as complex",
+        "percentage increase interpreted on a ratio scale"
+      ],
+      "justification": "ordering is invariant; ratios are not invariant under the additive offset",
+      "observation_id": "python.callable.mccabe_complexity",
+      "scale": "ordinal"
+    }
+  ],
+  "status": "local_phase6_candidate_not_released"
+}

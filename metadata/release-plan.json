@@ -1,0 +1,15 @@
+{
+  "artefact": "CodeProbe P7-R4 local review candidate",
+  "candidate": "P7-R4-review-candidate",
+  "licence": "MIT for source where declared; third-party notices retained",
+  "note": "Any successor release requires post-acceptance authorisation; this package has no DOI or tag.",
+  "owner": "author",
+  "planned_identifier": "[PLANNED]",
+  "public_release_identity": "v2.3.0 unchanged",
+  "public_release_modified": false,
+  "release_trigger": "separate author approval after editorial acceptance; no release action is authorised by this package",
+  "remote_actions_performed": false,
+  "review_access": "local package supplied with candidate submission materials",
+  "schema": "codeprobe-p7-r4-release-plan/v2",
+  "status": "local_unreleased_review_candidate"
+}

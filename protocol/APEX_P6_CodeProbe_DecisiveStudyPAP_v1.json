@@ -1,0 +1,77 @@
+{
+  "schema": "apex-codeprobe-decisive-study-pap/v1",
+  "version": "1.0.0",
+  "status": "registration_ready_not_registered_not_executed",
+  "decision": "Whether the six-gate route yields stable incremental detection beyond the strongest structural comparator, sufficient to reconsider a qualifying N2 claim.",
+  "design": "staged paired comparative study",
+  "arms": [
+    {
+      "id": "B0",
+      "name": "value-only agreement",
+      "description": "numeric/category agreement without structural or source-evidence gates"
+    },
+    {
+      "id": "B1",
+      "name": "structural comparator",
+      "description": "schema, digest and result-format validation without the complete six-gate route"
+    },
+    {
+      "id": "B2",
+      "name": "six-gate route",
+      "description": "G1–G6 with typed refusals, coordinate cover, policy and source replay"
+    }
+  ],
+  "unit": "project × scenario; clustering by project",
+  "population": "externally developed Python projects within declared parser/language scope",
+  "pilot_sample": {
+    "scenarios": 24,
+    "minimum_projects": 6,
+    "composition": "balanced natural records and prospectively perturbed records",
+    "project_cap": "no project may supply more than half of incremental detections"
+  },
+  "primary_estimand": "paired proportion of adjudicated boundary defects detected by B2 and missed by B1",
+  "secondary_estimands": [
+    "false-alert rate",
+    "unresolved-case rate",
+    "additional review time",
+    "yield by gate",
+    "leave-one-project-out stability"
+  ],
+  "ground_truth": {
+    "adjudicators": 2,
+    "independence": "independent of the CodeProbe implementation team where feasible",
+    "blinding": "method labels and source of each alert concealed during initial adjudication",
+    "disagreement": "resolved by a pre-named third adjudicator or recorded consensus conference before analysis"
+  },
+  "allocation_and_order": {
+    "scenario_order": "computer-generated random permutation with retained seed fixed before review",
+    "arm_presentation": "de-identified labels; records presented in random order",
+    "contamination_control": "adjudicators do not see the other arm outputs before their own classification"
+  },
+  "analysis": {
+    "primary": "paired project-clustered incremental detection estimate; all scenarios retained",
+    "uncertainty": "project-level nonparametric bootstrap with 10,000 resamples plus exact counts",
+    "false_alert": "Wilson 95% interval",
+    "stability": "leave-one-project-out estimates",
+    "review_time": "median and full distribution; no normality assumption",
+    "multiplicity": "one primary estimand; secondary estimands interpreted descriptively under predeclared thresholds",
+    "missingness": "every missing or failed run is a typed unresolved outcome, not silently excluded"
+  },
+  "pilot_continuation_rules": [
+    "at least four adjudicated defects detected by B2 and missed by B1",
+    "upper 95% Wilson bound for false-alert rate <0.20",
+    "no project supplies more than half of incremental detections",
+    "median additional review time <=10 minutes per scenario"
+  ],
+  "full_stage_precision": "choose size after pilot to target <=0.10 half-width for the 95% interval of incremental detection, capped at 80 scenarios with cluster correction documented",
+  "abandonment_rules": [
+    "stop strong N2 claim if any continuation rule fails",
+    "retain bounded-engineering framing after a null result",
+    "redesign before any efficacy claim after an adverse false-alert or timing result"
+  ],
+  "falsification": "The strong N2 claim fails if B2 lacks stable incremental detections, exceeds the false-alert threshold or loses its advantage under leave-one-project-out analysis.",
+  "ethics": "Obtain an institutional ethics determination before recruiting adjudicators as participants; collect no unnecessary personal data.",
+  "data_management": "pre-freeze project/scenario manifest, code and seeds; retain all outputs and typed failures; anonymise reviewer identifiers; publish only legally distributable material",
+  "cost": "28–45 author hours plus adjudicator time; outside B40",
+  "registration_trigger": "author approval, legal access to project materials, ethics determination and frozen pilot manifest"
+}

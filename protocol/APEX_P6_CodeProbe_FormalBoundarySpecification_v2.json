@@ -1,0 +1,201 @@
+{
+  "schema": "apex-codeprobe-formal-boundary-specification/v2",
+  "date": "2026-09-19",
+  "status": "local_candidate_protocol_not_yet_integrated_into_manuscript",
+  "domain": {
+    "execution_context": "omega=(b,l,p,pi,rho)",
+    "b": "finite byte sequence",
+    "l": "declared language",
+    "p": "logical path",
+    "pi": "versioned interpretation profile",
+    "rho": "declared runtime/build identity"
+  },
+  "gates": [
+    {
+      "id": "G1",
+      "name": "source admission",
+      "input": "finite source bytes, declared language, logical path and finite resource budget",
+      "pass": "an IntakeRecord binds raw and normalised hashes, UTF-8 text and physical lines",
+      "fail": "typed refusal; no substitute bytes or silent decoding repair",
+      "invariants": [
+        "invalid UTF-8 is refused",
+        "file identity checked before and after read"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "observation availability",
+      "input": "G1-admitted source plus required parser/entity/denominator",
+      "pass": "one of observed, not_applicable, insufficient_evidence or unavailable; observed iff value is non-null",
+      "fail": "state/value mismatch or missing typed reason",
+      "invariants": [
+        "zero remains observed",
+        "non-observed values are null"
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "value and codomain conformance",
+      "input": "an observation under a versioned specification",
+      "pass": "atomic finite value, unit, codomain and measurement scale match the specification",
+      "fail": "domain, bound, unit or scale violation",
+      "invariants": [
+        "McCabe-style C is ordinal in specification 1.2.0",
+        "decision-point count remains ratio"
+      ]
+    },
+    {
+      "id": "G4",
+      "name": "source-evidence adequacy",
+      "input": "evidence identifiers bound to normalised source and coordinates",
+      "pass": "structural evidence admission and, where required, coordinate coverage of all visited spans",
+      "fail": "unknown evidence, wrong scope or uncovered visited span",
+      "invariants": [
+        "structural validity is not treated as coordinate completeness"
+      ]
+    },
+    {
+      "id": "G5",
+      "name": "policy interpretation",
+      "input": "observed value, accepted profile identity and applicable rule",
+      "pass": "versioned non-compensatory decision vector with declared threshold set",
+      "fail": "profile mismatch, undeclared threshold or non-applicable rule treated as a decision",
+      "invariants": [
+        "lower <= nominal <= upper",
+        "endpoint reduction applies only to monotone x>t"
+      ]
+    },
+    {
+      "id": "G6",
+      "name": "consumer admission and source replay",
+      "input": "producer record, consumer schema/identifier grammar and declared source/profile/build for replay",
+      "pass": "accepted envelope or replay agreement; aliases preserve original source identity",
+      "fail": "typed rejection, replay mismatch or identity loss",
+      "invariants": [
+        "digest consistency is not authentication",
+        "record_id is not content identity"
+      ]
+    }
+  ],
+  "propositions": [
+    {
+      "id": "FP-01",
+      "name": "selected non-substitution",
+      "statement": "For named gates Gi,Gj, one admissible witness with Gi=PASS and Gj=FAIL refutes Gi=>Gj on the declared domain.",
+      "qualification": "Five selected implications only; no all-pairs or statistical independence claim."
+    },
+    {
+      "id": "FP-02",
+      "name": "threshold partition",
+      "statement": "For T=[L,U]∩Z and D_T(x)={1[x>t]:t∈T}, x<=L gives {0}, L<x<=U gives {0,1}, x>U gives {1}.",
+      "qualification": "Middle region is empty when L=U."
+    },
+    {
+      "id": "FP-03",
+      "name": "endpoint sufficiency",
+      "statement": "For monotone x>t, the image over the full integer interval is determined by endpoints L and U.",
+      "qualification": "Fails for undeclared non-monotone rules."
+    },
+    {
+      "id": "FP-04",
+      "name": "scale repair",
+      "statement": "d is ratio-scale count; C=1+d preserves order and differences but not ratios, so C is declared ordinal conservatively.",
+      "qualification": "No historical value changes."
+    },
+    {
+      "id": "FP-05",
+      "name": "identity separation",
+      "statement": "record_id hashes versioned specification and logical entity; measurement_digest hashes deterministic content without path metadata.",
+      "qualification": "record_id is scoped within a measurement result and is not globally unique."
+    },
+    {
+      "id": "FP-06",
+      "name": "numeric decision",
+      "statement": "Exact decimals pass iff delta<=max(abs_tol,rel_tol*max(|a|,|b|)); binary64 overlap with the boundary is indeterminate.",
+      "qualification": "Prospective only."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "FO-01",
+      "claim_id": "P6-C01",
+      "obligation": "The six gates have distinct typed domains and pass/fail conditions.",
+      "class": "FORMAL",
+      "method": "Definition audit and source-contract trace",
+      "status": "PASS",
+      "evidence": "FormalBoundarySpecification v2 §§2–3; Protocol v1 §5"
+    },
+    {
+      "id": "FO-02",
+      "claim_id": "P6-C02",
+      "obligation": "Each asserted non-implication has a named witness whose predecessor passes and target fails.",
+      "class": "FORMAL+EXECUTABLE",
+      "method": "Validate P3 witness results and witness preconditions",
+      "status": "PASS",
+      "evidence": "P3-T04–T07 and P3-T14; P6-T02"
+    },
+    {
+      "id": "FO-03",
+      "claim_id": "P6-C04",
+      "obligation": "Threshold-set partition is correct for every admissible integer L,U,x.",
+      "class": "FORMAL",
+      "method": "Proof plus exhaustive bounded comparison of implementation to full interval",
+      "status": "PASS",
+      "evidence": "FormalBoundarySpecification v2 §4; P6-T01"
+    },
+    {
+      "id": "FO-04",
+      "claim_id": "P6-C04",
+      "obligation": "Three stored levels are extensionally equivalent to the full integer interval for monotone x>t.",
+      "class": "FORMAL",
+      "method": "Endpoint proof and enumeration",
+      "status": "PASS",
+      "evidence": "FormalBoundarySpecification v2 §4; P6-T01"
+    },
+    {
+      "id": "FO-05",
+      "claim_id": "P6-C08",
+      "obligation": "Ratio statements about C=1+d are inadmissible because the offset changes ratios.",
+      "class": "FORMAL",
+      "method": "Affine-scale counterexample d1=1,d2=3",
+      "status": "PASS",
+      "evidence": "FormalBoundarySpecification v2 §5; P6-T03"
+    },
+    {
+      "id": "FO-06",
+      "claim_id": "P6-C06",
+      "obligation": "record_id is invariant to evidence/content changes within the same specification/entity slot, while measurement_digest changes with content.",
+      "class": "FORMAL+EXECUTABLE",
+      "method": "Anti-conflation metamorphic tests",
+      "status": "PASS",
+      "evidence": "IdentitySemantics v1; P6-T04"
+    },
+    {
+      "id": "FO-07",
+      "claim_id": "P6-C08",
+      "obligation": "Decimal comparison is symmetric, reflexive and deterministic with inclusive equality; binary boundary overlap cannot pass.",
+      "class": "FORMAL+EXECUTABLE",
+      "method": "Exact Decimal and half-ULP interval tests",
+      "status": "PASS",
+      "evidence": "NumericPolicy v1; P6-T05"
+    },
+    {
+      "id": "FO-08",
+      "claim_id": "P6-C03",
+      "obligation": "Observed/null and non-observed/non-null combinations are rejected.",
+      "class": "FORMAL+EXECUTABLE",
+      "method": "Validator and generated applicability cases",
+      "status": "PASS",
+      "evidence": "P6-T06; candidate validator"
+    },
+    {
+      "id": "FO-09",
+      "claim_id": "P6-C09",
+      "obligation": "No retained claim requires prevalence, causal effect, economic value or universal correctness.",
+      "class": "JUDGEMENT",
+      "method": "Claim-scope and Evidence Graph audit",
+      "status": "PASS",
+      "evidence": "ClaimScopeFreeze v1; EvidenceGraph v2"
+    }
+  ]
+}

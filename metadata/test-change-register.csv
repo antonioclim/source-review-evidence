@@ -1,0 +1,7 @@
+test,change,demonstration_test_was_wrong,red_team_decision,arbiter_decision,rule19
+review/parser_independent_oracle.py,ADDED,not applicable; new independent route,APPROVE,APPROVE,"No existing test, seed, threshold, data or baseline changed."
+review/claims_suite.py,ADDED,not applicable; nine new claims-as-tests,APPROVE,APPROVE,"Includes generated, curated and invalid inputs; limitations retained."
+review/run_reproduction.py,ADDED_AND_REPAIRED,initial source-manifest comprehension was syntactically invalid; pre-fix run failed,APPROVE_AFTER_FIX,APPROVE,Pipeline implementation fixed; no scientific expected output weakened.
+review/p6_protocol_harness.py invocation,DEPENDENCY_DECLARATION_REPAIRED,initial isolated -S invocation could not import jsonschema; test itself remained unchanged,APPROVE_AFTER_DEPENDENCY_DECLARATION,APPROVE,Exact JSON Schema test retained; jsonschema 4.26.0 declared.
+source/tests/test_*.py,UNCHANGED,not applicable,APPROVE,APPROVE,824 tests executed; zero failures/errors; one pre-existing expected skip.
+review/claims_suite.py::P6-C02,REPAIRED,Old receipt-based C02 remained PASS after injected alias defect; new live-witness C02 fails.,APPROVE_AFTER_FAILING_BEFORE_TEST,APPROVE_R4_CLEAN_QUALIFICATION; FRESH_EYES_R5_PENDING,"No expected output, seed, threshold or source test weakened; five claim-level checks retained."
