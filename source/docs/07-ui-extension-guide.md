@@ -1,0 +1,76 @@
+# UI extension guide
+
+CodeProbe keeps the browser interface deliberately simple: static HTML, external JavaScript, external CSS and a self-contained Python engine loaded through Pyodide. This design is scalable for course-level extensions because new features can be added as isolated panels without changing the analysis engine.
+
+## Current extension points
+
+### Tabs
+
+`app/index.html` defines result panels using matching tab buttons and panel IDs:
+
+```html
+<button class="tab-btn" data-tab="tab-review" type="button">Manual review</button>
+<section id="tab-review" class="tab-panel">...</section>
+```
+
+`app/codeprobe-ui.js` activates panels through the generic `activateTab()` function. A new feature usually needs only one tab button, one panel and one renderer.
+
+### Renderers
+
+The main render pipeline is:
+
+```text
+renderReport()
+├── renderSummary()
+├── renderManualReview()
+├── populateProjectFiles() or populateMetrics()
+└── update export/history state
+```
+
+New panels should follow the same pattern: read structured fields from the JSON report, render them into a dedicated container and avoid mutating the report itself.
+
+### Project intake
+
+Both interfaces delegate drag-and-drop enumeration to `collectDroppedFiles()` in `app/pyodide-loader.js`. A complete Chromium directory-entry selection uses `webkitGetAsEntry`; an all-null selection uses `DataTransfer.files` only when the file-item count matches. A mixed selection is rejected explicitly before enumeration, so a missing entry cannot silently remove a selected file. Enumeration retains the 2,000-entry, 32-level and 10-second limits. ZIP files are sent as base64 to the engine; the suffix-only name `.zip` becomes the project name `project` in both interfaces.
+
+Folder/file selections carry `{path, content, size_bytes}` records and optional `intake_provenance`. The latter records `encoding` (`utf-8`, `utf-8-sig` or `latin-1`), `normalisation` (`none` or `newlines`) and up to eight plain-text `warnings` of at most 512 characters each. The shared decoder applies the 1,000,000-byte source ceiling before checking the entire candidate for NUL; NUL is a rejection signal, not a general binary-file classifier. A Latin-1 fallback warning survives the UI, worker and runtime into JSON and text reports. Provenance is labelled `caller-reported`: it neither authenticates original bytes nor overrides measured input limits. Editing loaded single-file text clears its original decoding provenance.
+
+### Report schema
+
+Features that need to survive export should be added to the JSON report in `src/codeprobe_runtime.py`, then displayed in the UI. Phase 8 uses this method for `manual_review_guidance`, `risk_zones` and `manual_review_recommendations`.
+
+## Constraints worth preserving
+
+- Do not add inline JavaScript or inline CSS; the release checker rejects them.
+- Keep browser history optional and disabled by default.
+- Keep source code out of local history.
+- Prefer structured JSON fields over prose-only report additions.
+- Keep score interpretation separate from misconduct judgement.
+- Do not make CDN or Pyodide trust assumptions invisible; use `runtime-config.json`.
+
+## Recommended pattern for future features
+
+1. Add data to `src/codeprobe_runtime.py` or to a browser-only state object.
+2. Add a tab/panel in `app/index.html` if the feature has persistent visual output.
+3. Add a renderer in `app/codeprobe-ui.js`.
+4. Add CSS to `app/codeprobe.css`.
+5. Add tests for schema, UI hooks and release validation.
+6. Reconcile `app/resource-integrity.json` and every affected browser integrity record, inspect the change, then execute the targeted static and actual browser checks required by that change. Record their environment and outcomes before updating the current distribution manifest. The inherited component release-evidence writer is not the release gate for Source Review Evidence 1.0.0; preserve historical locks.
+
+
+## Accessibility contract
+
+New controls must have a programmatic name and a visible `:focus-visible` state. Dynamic operational messages belong in the existing polite status regions rather than in transient visual-only text. Numeric score bars must update their visual width and `aria-valuenow`/`aria-valuetext` together; unavailable or inapplicable scores omit `aria-valuenow` and retain an explicit textual state.
+
+The main result selector follows the ARIA tab pattern. Exactly one tab is selected and in the page tab order. Left and Right move cyclically, Home selects the first tab and End selects the last. Inactive panels carry the native `hidden` state as well as the visual class so they are absent from the accessibility tree.
+
+Run the static and real-browser checks after changing the interface:
+
+```bash
+python3 -I -S -B -m unittest discover -s tests -p 'test_browser_security.py' -v
+node tools/check_browser_accessibility.js
+```
+
+The browser gate launches the shipped local server and an installed Chromium-family browser, blocks the external Pyodide CDN and verifies the interface contract without treating successful runtime download as an accessibility prerequisite.
+
+New analysis panels must use the shared worker session, not a page-level Python runtime. Preserve single-flight admission, generation checks, cancellation, deadlines and verified engine identity. Do not add a production debug command that executes arbitrary Python. Extend both the hermetic protocol tests and real Chromium gate for any protocol change.

@@ -1,0 +1,12 @@
+{
+  "schema": "source-review-evidence-component-validation-view/1",
+  "distribution_version": "1.0.0",
+  "component_runtime_version": "2.3.0",
+  "canonical_record": "../../validation/RP2_VALIDATION.json",
+  "validation_record_sha256": "c05b59f060fc9275cf5e7b075ad7b67a3b985d8d1799471fe7d71670903cd33b",
+  "status": "PASS_SCOPED_LOCAL_CHECKS_WITH_DECLARED_SKIP",
+  "historical_component_release_gate": "NOT_RUN_FOR_NEW_DISTRIBUTION",
+  "native_browser_qualification": false,
+  "strict_historical_reproduction": false,
+  "publication_ready": false
+}

@@ -1,0 +1,36 @@
+{
+  "samples": [
+    {
+      "path": "samples/file-human-fit.py",
+      "label": "human",
+      "language_hint": "python",
+      "kind": "file",
+      "group_id": "human-fit-group",
+      "split": "fit"
+    },
+    {
+      "path": "samples/file-ai_generated-fit.py",
+      "label": "ai_generated",
+      "language_hint": "python",
+      "kind": "file",
+      "group_id": "ai_generated-fit-group",
+      "split": "fit"
+    },
+    {
+      "path": "samples/file-human-evaluation.py",
+      "label": "human",
+      "language_hint": "python",
+      "kind": "file",
+      "group_id": "human-evaluation-group",
+      "split": "evaluation"
+    },
+    {
+      "path": "samples/file-ai_generated-evaluation.py",
+      "label": "ai_generated",
+      "language_hint": "python",
+      "kind": "file",
+      "group_id": "ai_generated-evaluation-group",
+      "split": "evaluation"
+    }
+  ]
+}

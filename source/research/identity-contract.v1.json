@@ -1,0 +1,36 @@
+{
+  "anti_conflation_invariants": [
+    "Evidence-only or value changes may preserve record_id but must change measurement_digest.",
+    "A specification-version change must change the affected record_id.",
+    "A path-only relocation must change neither record_id nor measurement_digest.",
+    "record_id alone must not be used as a content hash or global identifier."
+  ],
+  "contract_id": "codeprobe-observation-identity/1.0.0",
+  "measurement_digest": {
+    "includes": [
+      "kernel and catalogue identities",
+      "normalised artifact identity",
+      "source evidence without path metadata",
+      "observation content without path metadata",
+      "non-inferences",
+      "legacy compatibility"
+    ],
+    "path_invariant": true,
+    "role": "content identity for the deterministic measurement result"
+  },
+  "record_id": {
+    "comparison_scope": "within a declared result or together with measurement_digest",
+    "excludes": [
+      "source path",
+      "source evidence identifier",
+      "observed value"
+    ],
+    "global_uniqueness": false,
+    "inputs": [
+      "versioned specification_id",
+      "logical entity_id"
+    ],
+    "role": "stable observation-slot identity within one measurement result"
+  },
+  "status": "local_phase6_candidate_not_released"
+}

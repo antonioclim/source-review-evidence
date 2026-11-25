@@ -1,0 +1,5 @@
+path,label,language_hint,kind,group_id,split
+samples/file-human-fit.py,human,python,file,human-fit-group,fit
+samples/file-ai_generated-fit.py,ai_generated,python,file,ai_generated-fit-group,fit
+samples/file-human-evaluation.py,human,python,file,human-evaluation-group,evaluation
+samples/file-ai_generated-evaluation.py,ai_generated,python,file,ai_generated-evaluation-group,evaluation

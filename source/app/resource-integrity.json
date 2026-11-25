@@ -1,0 +1,60 @@
+{
+  "schema": "codeprobe-browser-resource-integrity/v1",
+  "note": "SHA-256 and SRI values for the packaged CodeProbe browser assets, production runtime configuration, measured Pyodide provenance metadata and auditable Python runtime.",
+  "assets": [
+    {
+      "path": "codeprobe.css",
+      "size_bytes": 18703,
+      "sha256_hex": "fb6f814e60d724ae50ee6c4a85e557e69c3af13bf2dfd36fe7af0de53d89a2b3",
+      "sri_sha256": "sha256-+2+BTmDXJK5Q7mxKheVX5pw68Tvy39Nv568N5T2JorM="
+    },
+    {
+      "path": "project.css",
+      "size_bytes": 3288,
+      "sha256_hex": "6394a29e054652cd425bf6328c7c0580ee9a998d250f168680730bd9e5c6d30c",
+      "sri_sha256": "sha256-Y5SingVGUs1CW/YyjHwFgO6amY0lDxaGgHML2eXG0ww="
+    },
+    {
+      "path": "pyodide-loader.js",
+      "size_bytes": 35678,
+      "sha256_hex": "3f482b89ac943c289396190cd96637ff91bae39e6f6e5bad6014d8fd2b424946",
+      "sri_sha256": "sha256-P0griayUPCiTlhkM2WY3/5G6455vblutYBTY/StCSUY="
+    },
+    {
+      "path": "codeprobe-ui.js",
+      "size_bytes": 80100,
+      "sha256_hex": "dd70fabff6902751e6fbd683900fbb465d9885edf631e25e27e037ed707938be",
+      "sri_sha256": "sha256-3XD6v/aQJ1Hm+9aDkA+7Rl2Yhe32MeJeJ+A37XB5OL4="
+    },
+    {
+      "path": "project-ui.js",
+      "size_bytes": 20171,
+      "sha256_hex": "e0486278f651df6e5aa15e8a8afad448aa59b2fc78501735deb4b470627aca11",
+      "sri_sha256": "sha256-4EhiePZR325aoV6KivrUSKpZsvx4UBc13rS0cGJ6yhE="
+    },
+    {
+      "path": "runtime-config.json",
+      "size_bytes": 752,
+      "sha256_hex": "2f339fe1f29c55145e85a791bfac12cb15ca6c30fa3d75c5fe59114d2175770b",
+      "sri_sha256": "sha256-LzOf4fKcVRRehaeRv6wSyxXKbDD6PXXF/lkRTSF1dws="
+    },
+    {
+      "path": "pyodide-provenance.json",
+      "size_bytes": 2197,
+      "sha256_hex": "fbc32054bc8aa3a991c3f6a020719286e2485417f4eba6eb3726498e3db2a58f",
+      "sri_sha256": "sha256-+8MgVLyKo6mRw/agIHGShuJIVBf066brNyZJjj2ypY8="
+    },
+    {
+      "path": "../src/codeprobe_runtime.py",
+      "size_bytes": 385107,
+      "sha256_hex": "5e7c9bd35d6173c19ebca26f0a1f81f550f19c45e9be01f107ddfd1e69c7548a",
+      "sri_sha256": "sha256-Xnyb011hc8GevKJvCh+B9VDxnEXpvgHxB939HmnHVIo="
+    },
+    {
+      "path": "analysis-worker.js",
+      "size_bytes": 3766,
+      "sha256_hex": "a2f4e97fbae97cb8ab2e6c41ec855bfb8ff97e7527fab779c5df18b917fcb9b1",
+      "sri_sha256": "sha256-ovTpf7rpfLirLmxB7IVb+4/5fnUn+rd5xd8YuRf8ubE="
+    }
+  ]
+}
