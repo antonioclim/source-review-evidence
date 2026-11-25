@@ -1,0 +1,5 @@
+# Preserve the exact bytes identified by the distribution manifest.
+# Browser uploads do not apply these attributes; remote bytes need checking.
+* -text
+*.png binary
+**/.coverage* binary
